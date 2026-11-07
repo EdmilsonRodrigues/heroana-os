@@ -1,0 +1,46 @@
+ Source  Dependency
+apt     linux-image-amd64
+apt     grub-pc
+apt     grub-efi-amd64-signed
+apt     systemd-sysv
+apt     sway
+apt     waybar
+apt     kitty
+apt     zsh
+apt     podman
+apt     grim
+apt     slurp
+apt     wireplumber
+apt     pipewire-audio
+apt     network-manager
+apt     blueman
+apt     cliphist
+apt     sway-notification-center
+apt     lightdm
+apt     tmux
+apt     htop
+apt     papers
+apt     mupdf
+apt     incus
+apt     swayimg
+apt     celluloid
+apt     mpv
+apt     thunar
+apt     extrepo
+extrepo librewolf
+apt     snapd
+command systemctl enable snapd --now
+command NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" -- --path /opt/linuxbrew
+brew    asdf
+brew    argocd
+brew    golangci-lint
+brew    gopls
+apt     mu
+apt     isync
+apt     msmtp
+apt     incus
+apt     incus-base
+
+
+        
+
