@@ -9,7 +9,6 @@ IMG_DIR="${PARENT_DIR}/img"
 DOTFILES_DIR="${PARENT_DIR}/dotfiles"
 
 SIZE_EFI="512M"
-SIZE_BOOT="1G"
 
 get_fs_info() {
     whiptail --title "${MAIN_TITLE}" --defaultno --yesno "
@@ -51,7 +50,6 @@ get_fs_info() {
         SIZE_HOME="$(( disk_gb - 20 ))G"
     fi
 
-    # Review and approval loop
     while true; do
         local partition_summary="=== Partition Layout Proposal ===
 Selected Disk: /dev/$disk_to_install (~${disk_gb} GB)
@@ -153,9 +151,17 @@ Timezone:    $USER_TIMEZONE
 Locale:      $USER_LOCALE
 Keyboard:    $USER_KB_LAYOUT
 
+======= Partition Configurations =======
+- Boot Partition (EFI): $SIZE_BOOT
+- Swap Partition:       $SIZE_SWAP (Enabled: $HAS_SWAP)
+- Home Partition:       $SIZE_HOME
+- Root Partition (/):   Remaining space
+
 Is this configuration correct? Do you want to proceed?"
 
-    qhiptail --title "${MAIN_TITLE} - Summary" --yesno "$summary" 0 0 || quit
+    whiptail --title "${MAIN_TITLE} - Summary" --yesno "$summary" 0 0 || quit
+
+
 }
 
 quit() {
