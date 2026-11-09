@@ -16,7 +16,9 @@ apt     network-manager
 apt     blueman
 apt     cliphist
 apt     sway-notification-center
-apt     lightdm
+apt     greetd
+apt     gtkgreet
+apt     cage
 apt     tmux
 apt     htop
 apt     papers

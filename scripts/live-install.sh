@@ -11,6 +11,7 @@ USER_FULL_NAME=${7-"Edmilson Rodrigues"}
 USER_TEAM=${8-"DevOps Team"}
 USER_EMAIL=${9-"edmilson.rodriguesn38@gmail.com"}
 USER_PASSWORD="${10-123456}"
+USER_HOST="${11-heroana}"
 USER_GROUPS="docker incus-admin lxd microk8s libvirt kvm wireshark sudo"
 USER_HOME="/home/${USER}"
 
@@ -63,10 +64,12 @@ configure_skel() {
 
     _skel_bashrc="${OS_DIR}/etc/skel/.bashrc"
     echo >> "$_skel_bashrc"
+    # shellcheck disable=SC2016
     echo 'eval "$(/opt/linuxbrew/bin/brew shellenv bash)"' >> "$_skel_bashrc"
 
     _skel_zshrc="${OS_DIR}/etc/skel/.zshrc"
     echo >> "$_skel_zshrc"
+    # shellcheck disable=SC2016
     echo 'eval "$(/opt/linuxbrew/bin/brew shellenv zsh)"' >> "$_skel_zshrc"
 }
 
@@ -89,15 +92,21 @@ create_main_user() {
 }
 
 configure_root() {
-    install -Dm644 "${DOTFILES_DIR}/lightdm/greeter.conf"             "${OS_DIR}/etc/tmpfiles.d/greeter.conf"
-	systemd-tmpfiles --create /etc/tmpfiles.d/greeter.conf
-	install -Dm644 "${DOTFILES_DIR}/lightdm/slick-greeter.conf"       "${OS_DIR}/etc/lightdm/slick-greeter.conf"
-    install -Dm644 "${IMG_DIR}/wallpaper.jpg"                         "${OS_DIR}/usr/share/backgrounds/wallpaper.jpg"
-    install -Dm644 "${DOTFILES_DIR}/lightdm/lightdm-gtk-greeter.conf" "${OS_DIR}/etc/lightdm/lightdm-gtk-greeter.conf"
+    install -Dm644 "${IMG_DIR}/wallpaper.jpg" "${OS_DIR}/usr/share/backgrounds/wallpaper.jpg"
 
     echo "export EDITOR=nano" >> "${OS_DIR}/etc/profile.d/editor.sh"
     echo "export VISUAL=nano" >> "${OS_DIR}/etc/profile.d/editor.sh"
     chmod +x "${OS_DIR}/etc/profile.d/editor.sh"
+
+    echo "${USER_HOST}" > "${OS_DIR}/etc/hostname"
+    cat << EOF > "${OS_DIR}/etc/hosts"
+127.0.0.1   localhost
+127.0.1.1   ${USER_HOST}
+
+::1         localhost ip6-localhost ip6-loopback
+ff02::1     ip6-allnodes
+ff02::2     ip6-allrouters
+EOF
 }
 
 install_deps() {
@@ -144,7 +153,21 @@ install_deps() {
         fi
     done
 
-    chroot "${OS_DIR}" systemctl enable lightdm
+    mkdir -p "${OS_DIR}/etc/greetd"
+
+    cat << 'EOF' > "${OS_DIR}/etc/greetd/config.toml"
+[terminal]
+vt = 1
+
+[default_session]
+command = "cage -s -- gtkgreet"
+user = "_greetd"
+EOF
+
+    # Specify the sessions available to launch from gtkgreet
+    echo "sway" > "${OS_DIR}/etc/greetd/environments"
+
+    systemctl enable greetd
 }
 
 umount_fs() {
