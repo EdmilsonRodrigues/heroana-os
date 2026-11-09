@@ -1,4 +1,4 @@
- Source  Dependency
+Source  Dependency
 apt     linux-image-amd64
 apt     grub-pc
 apt     grub-efi-amd64-signed
@@ -29,18 +29,19 @@ apt     thunar
 apt     extrepo
 extrepo librewolf
 apt     snapd
+apt     curl
+apt     sudo
 command systemctl enable snapd --now
-command NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" -- --path /opt/linuxbrew
 brew    asdf
 brew    argocd
 brew    golangci-lint
 brew    gopls
-apt     mu
+apt     maildir-utils
+apt     mu4e
 apt     isync
 apt     msmtp
-apt     incus
 apt     incus-base
+apt     git
+apt     build-essential
 
-
-        
 

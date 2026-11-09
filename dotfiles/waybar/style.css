@@ -1,0 +1,148 @@
+* {
+  font-family: Maple Mono;
+  border-radius: 8px;
+  font-size: 14px;
+  padding: 0px;
+  background: transparent;
+}
+
+window#waybar {
+  background-image: linear-gradient(to bottom, #181f1c 100%); /* $bg_dark */
+  border-radius: 14px;
+  padding: 0px;
+  border-style: none;
+}
+
+#battery,
+#network,
+#clock,
+#custom-applauncher,
+#custom-slack,
+#custom-mail,
+#tray,
+#workspaces,
+#cpu,
+#memory {
+  background-image: linear-gradient(to bottom, #232a2e 100%); /* $bg_surface */
+  margin: 6px;
+  margin-right: 0px;
+  padding: 4px 8px;
+  border-radius: 8px;
+  color: #d3c6aa; /* Warm Parchment */
+  border-style: none;
+  transition-duration: 120ms;
+}
+
+#clock {
+  margin-right: 6px;
+}
+
+/* Hover effects utilizing the Moss Emerald and Dark Backgrounds */
+#cpu:hover,
+#memory:hover {
+  background-image: linear-gradient(to bottom, #a7c080 100%);
+  color: #181f1c;
+  transition-duration: 120ms;
+}
+
+#custom-applauncher {
+  font-weight: bold;
+  color: #a7c080; /* Make the launcher icon stand out natively */
+  transition-duration: 120ms;
+}
+
+#custom-applauncher:hover {
+  background-image: linear-gradient(to bottom, #a7c080 100%);
+  color: #181f1c;
+  transition-duration: 120ms;
+}
+
+#tray menu {
+  background-color: #181f1c; /* $bg_dark */
+  color: #d3c6aa;
+  padding: 4px;
+}
+
+#tray menu menuitem {
+  background-image: linear-gradient(to bottom, #232a2e 100%);
+  margin: 3px;
+  color: #d3c6aa;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #232a2e;
+}
+
+#tray menu menuitem:hover {
+  background-image: linear-gradient(to bottom, #3a454a 100%); /* Kitty selection */
+  color: #7fbbb3; /* Bioluminescent teal glow */
+  font-weight: bold;
+}
+
+#workspaces button {
+  transition-duration: 100ms;
+  all: initial;
+  min-width: 0;
+  font-weight: bold;
+  color: #d3c6aa;
+  margin-right: 0.2cm;
+  margin-left: 0.2cm;
+}
+
+#workspaces button:hover {
+  transition-duration: 120ms;
+  color: #7fbbb3; /* Subdued teal hover */
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+  color: #a7c080; /* $border_active */
+  font-weight: bold;
+}
+
+#workspaces button.urgent {
+  color: #e67e80; /* $accent_urgent */
+}
+
+#custom-slack,
+#custom-mail {
+  font-weight: bold;
+  min-width: 22px;
+}
+
+#custom-slack.open,
+#custom-mail.open {
+  color: #a7c080;
+}
+
+#custom-slack.unread,
+#custom-mail.unread {
+  color: #dbbc7f;
+}
+
+#custom-slack.closed,
+#custom-mail.closed {
+  color: #76807a;
+}
+
+#custom-slack.urgent,
+#custom-mail.urgent {
+  color: #181f1c;
+  background-image: linear-gradient(to bottom, #e67e80 100%);
+}
+
+#custom-slack.unread,
+#custom-mail.unread {
+  color: #181f1c;
+  background-image: linear-gradient(to bottom, #dbbc7f 100%);
+}
+
+#battery {
+  background-color: #232a2e;
+}
+
+#battery.warning,
+#battery.critical,
+#battery.urgent {
+  color: #181f1c;
+  background-color: #e67e80; /* Crimson Spore */
+}

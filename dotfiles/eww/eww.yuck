@@ -1,0 +1,16 @@
+;; Architectural Entry Point
+(include "./eww_vars.yuck")
+(include "./eww_widgets.yuck")
+
+;; Main Dashboard Window
+(defwindow dashboard
+  :monitor 0
+  :geometry (geometry :x "0px"
+                      :y "0px"
+                      :width "420px"
+                      :height "460px"
+                      :anchor "center")
+  :stacking "fg"
+  :exclusive false
+  :focusable true
+  (dashboard_layout))

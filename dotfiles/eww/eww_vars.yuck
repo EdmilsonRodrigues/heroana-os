@@ -1,0 +1,5 @@
+;; System Variables & Script Polls
+(defpoll uptime :interval "1m" "~/.config/eww/scripts/uptime.sh")
+(defpoll user :interval "1h" "whoami")
+(defpoll host :interval "1h" "hostname")
+(defpoll day_str :interval "10s" "date '+%A, %b %d'")

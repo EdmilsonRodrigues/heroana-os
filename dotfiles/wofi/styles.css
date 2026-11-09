@@ -1,0 +1,73 @@
+* {
+  font-family: Maple Mono;
+  background: transparent;
+  color: #d3c6aa; /* Warm Parchment */
+}
+
+#window {
+  color: #d3c6aa;
+  border-color: #2d3834; /* $border_muted */
+  border-style: solid;
+  border-width: 1px;
+  background-image: linear-gradient(to bottom, #1e2326 100%);
+  border-radius: 14px;
+}
+
+#scroll {
+  border-top-style: solid;
+  border-width: 1px;
+  border-color: #2d3834;
+}
+
+#inner-box {
+  padding-top: 12px;
+}
+
+#entry {
+  border-style: none;
+  border-color: #d3c6aa;
+  color: #d3c6aa;
+  padding: 6px;
+  margin-bottom: 8px;
+  margin-left: 12px;
+  margin-right: 12px;
+  border-radius: 12px;
+}
+
+#entry:selected {
+  background: #3a454a; /* Kitty selection_background */
+  color: #a7c080; /* Moss Emerald */
+  font-weight: bold;
+  outline: none;
+}
+
+#input {
+  background-color: #181f1c; /* $bg_dark */
+  color: #d3c6aa;
+  border-color: #2d3834;
+
+  border-style: none;
+  border-bottom-style: solid;
+  border-width: 1px;
+
+  font-style: normal;
+
+  border-radius: 8px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+
+  padding: 12px;
+  margin: 8px;
+}
+
+#input:focus {
+  background: #232a2e; /* $bg_surface */
+  background-color: #232a2e;
+  border-color: #7fbbb3; /* $accent_glow */
+  font-style: italic;
+}
+
+#img {
+  padding: 4px;
+  margin-right: 6px;
+}

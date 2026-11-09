@@ -1,0 +1,63 @@
+# Default config for sway
+# Managed via GNU Stow & Git
+
+# Font
+font pango:Maple Mono Regular 10
+
+### Variables
+set $mod Mod4
+
+# Home row direction keys
+set $left j
+set $down k
+set $up i
+set $right l
+
+# Preferred applications
+set $term kitty
+set $file_explorer nautilus
+set $menu pgrep wofi > /dev/null 2>&1 && killall wofi || wofi --show drun --location top -y 15
+
+### Output configuration
+output * bg /usr/share/backgrounds/wallpaper.jpg fill
+output eDP-1 resolution 1920x1080@60.056Hz position 0,0
+
+### Input configuration
+input "1:1:AT_Translated_Set_2_keyboard" {
+    xkb_layout "pt"
+}
+
+input "6700:11303:USB_USB_Keyboard" {
+    xkb_layout "es"
+}
+
+input "1739:52781:MSFT0001:00_06CB:CE2D_Touchpad" {
+    natural_scroll enabled
+    tap enabled
+    dwt disabled
+    middle_emulation disabled
+}
+
+input "12538:770:Instant_USB_Optical_Mouse" {
+    natural_scroll disabled
+}
+
+# Status Bar
+bar {
+    swaybar_command waybar
+}
+
+# Eww
+exec_always ~/.config/eww/scripts/start.sh
+
+# System Includes & Environment Setup
+include @sysconfdir@/sway/config.d/*
+include ~/.config/sway/config.d/*
+exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_SESSION_TYPE MOZ_ENABLE_WAYLAND=1 XDG_CURRENT_DESKTOP=sway
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_SESSION_TYPE MOZ_ENABLE_WAYLAND XDG_CURRENT_DESKTOP
+exec systemctl --user restart xdg-desktop-portal-wlr.service xdg-desktop-portal-gtk.service xdg-desktop-portal.service
+bindsym $mod+Shift+e exec swaynag -t warning -m "Are you sure you want to exit sway?" -B "Yes, EXIT!" "swaymsg exit" --font="Maple Mono Bold 12"
+bindsym $mod+Shift+b exec killall -SIGUSR1 waybar
+exec wl-paste --type text --watch cliphist store
+exec wl-paste --type image --watch cliphist store
+bindsym $mod+c exec cliphist list | wofi --show dmenu -p "Clipboard" --location top -y 15 | cliphist decode | wl-copy

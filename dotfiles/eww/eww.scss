@@ -1,0 +1,123 @@
+// Enchanted Forest Palette
+$bg-dark: #181f1c;
+$bg-surface: #232a2e;
+$bg-hover: #3a454a;
+$fg-text: #d3c6aa;
+$border-muted: #2d3834;
+$accent-green: #a7c080;
+$accent-teal: #7fbbb3;
+$accent-red: #e67e80;
+$accent-yellow: #dbbc7f;
+
+* {
+  all: unset;
+  font-family: "Maple Mono", monospace;
+  color: $fg-text;
+}
+
+.dashboard-window {
+  background-color: $bg-dark;
+  border: 1px solid $border-muted;
+  border-radius: 16px;
+  padding: 18px;
+}
+
+.card {
+  background-color: $bg-surface;
+  border-radius: 12px;
+  padding: 14px;
+  border: 1px solid $border-muted;
+}
+
+/* Header Card */
+.header-card {
+  .profile-icon {
+    font-size: 36px;
+    color: $accent-green;
+  }
+  .user-title {
+    font-size: 15px;
+    font-weight: bold;
+    color: $fg-text;
+  }
+  .uptime-text {
+    font-size: 12px;
+    color: $accent-teal;
+  }
+}
+
+/* Stats Card */
+.stats-card {
+  .stat-icon {
+    font-size: 16px;
+    min-width: 20px;
+  }
+  .cpu-icon { color: $accent-green; }
+  .ram-icon { color: $accent-teal; }
+  .disk-icon { color: $accent-yellow; }
+
+  .stat-text {
+    font-size: 13px;
+    font-weight: bold;
+    min-width: 40px;
+  }
+
+  scale trough {
+    background-color: $bg-dark;
+    border-radius: 8px;
+    min-height: 10px;
+    min-width: 230px;
+
+    highlight {
+      border-radius: 8px;
+    }
+  }
+
+  .cpu-bar scale trough highlight { background-color: $accent-green; }
+  .ram-bar scale trough highlight { background-color: $accent-teal; }
+  .disk-bar scale trough highlight { background-color: $accent-yellow; }
+}
+
+/* Quick Actions Card */
+.actions-card {
+  padding: 8px;
+  .action-btn {
+    background-color: $bg-dark;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    border: 1px solid $border-muted;
+    transition: 120ms;
+
+    &:hover {
+      background-color: $accent-green;
+      color: $bg-dark;
+    }
+  }
+}
+
+/* Power Menu Card */
+.power-card {
+  padding: 8px;
+  .power-btn {
+    background-color: $bg-dark;
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid $border-muted;
+    transition: 120ms;
+
+    &:hover {
+      background-color: $bg-hover;
+    }
+  }
+
+  .lock-btn:hover { color: $accent-teal; }
+  .logout-btn:hover { color: $accent-yellow; }
+  .reboot-btn:hover { color: $accent-green; }
+  .shutdown-btn:hover {
+    background-color: $accent-red;
+    color: $bg-dark;
+  }
+}

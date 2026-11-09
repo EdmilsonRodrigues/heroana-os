@@ -1,0 +1,73 @@
+;; Layout Container
+(defwidget dashboard_layout []
+  (box :class "dashboard-window"
+       :orientation "v"
+       :space-evenly false
+       :spacing 14
+    (header_widget)
+    (stats_widget)
+    (quick_actions)
+    (power_menu)))
+
+;; Header Component
+(defwidget header_widget []
+  (box :class "card header-card"
+       :orientation "h"
+       :space-evenly false
+       :spacing 16
+    (label :class "profile-icon" :text "󰀉")
+    (box :orientation "v" :space-evenly false :valign "center"
+      (label :class "user-title" :text "${user}@${host}" :halign "start")
+      (label :class "uptime-text" :text "󱎫 up ${uptime} | ${day_str}" :halign "start"))))
+
+;; Resource Stats Component
+(defwidget stats_widget []
+  (box :class "card stats-card"
+       :orientation "v"
+       :space-evenly false
+       :spacing 12
+    ;; CPU
+    (box :orientation "h" :space-evenly false :spacing 10
+      (label :class "stat-icon cpu-icon" :text "")
+      (scale :class "stat-bar cpu-bar"
+             :value "${round(EWW_CPU.avg, 0)}"
+             :min 0 :max 100
+             :active false)
+      (label :class "stat-text" :text "${round(EWW_CPU.avg, 0)}%"))
+    ;; RAM
+    (box :orientation "h" :space-evenly false :spacing 10
+      (label :class "stat-icon ram-icon" :text "")
+      (scale :class "stat-bar ram-bar"
+             :value "${round(EWW_RAM.used_mem_perc, 0)}"
+             :min 0 :max 100
+             :active false)
+      (label :class "stat-text" :text "${round(EWW_RAM.used_mem_perc, 0)}%"))
+    ;; Disk
+    (box :orientation "h" :space-evenly false :spacing 10
+      (label :class "stat-icon disk-icon" :text "󰋊")
+      (scale :class "stat-bar disk-bar"
+             :value "${round(EWW_DISK["/"].used_perc, 0)}"
+             :min 0 :max 100
+             :active false)
+      (label :class "stat-text" :text "${round(EWW_DISK["/"].used_perc, 0)}%"))))
+
+;; Quick Application Launchers
+(defwidget quick_actions []
+  (box :class "card actions-card"
+       :orientation "h"
+       :space-evenly true
+       :spacing 10
+    (button :class "action-btn" :onclick "kitty & eww close dashboard" "󰞷 Term")
+    (button :class "action-btn" :onclick "GTK_THEME=diinki-retro-dark nautilus & eww close dashboard" "󰝰 Files")
+    (button :class "action-btn" :onclick "pgrep wofi >/dev/null 2>&1 && killall wofi || wofi --show drun --location top -y 15 & eww close dashboard" "󰍉 Apps")))
+
+;; System Power Controls
+(defwidget power_menu []
+  (box :class "card power-card"
+       :orientation "h"
+       :space-evenly true
+       :spacing 10
+    (button :class "power-btn lock-btn" :onclick "swaylock & eww close dashboard" "󰌾")
+    (button :class "power-btn logout-btn" :onclick "swaymsg exit" "󰍃")
+    (button :class "power-btn reboot-btn" :onclick "systemctl reboot" "󰜉")
+    (button :class "power-btn shutdown-btn" :onclick "systemctl poweroff" "󰐥")))

@@ -1,1005 +1,0 @@
-Script started on 2026-10-17 12:53:13-05:00 [TERM="tmux-256color" TTY="/dev/pts/4" COLUMNS="207" LINES="47"]
-^C[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hincus[1m[31mi[1m[31mn[1m[31mc[1m[31mu[1m[31ms[0m[39m[1m[31mu[0m[39m[0m[39m [90ms[39m[1m[31mc[0m[39m[0m[39m [39m [90mus[39m[1m[31mi[1m[31mn[0m[39m[0m[39m [39m [39m [90mcus[39m[1m[31mi[0m[39m[0m[39m [39m [39m [39m [1m[31mi[0m[39m[90mncus[39m[0m[39m [39m [39m [39m [39m w[32mw[39m[32mw[32mh[39m[1m[31mw[1m[31mh[0m[39m[1m[31mw[1m[31mh[1m[31mi[0m[39m[1m[31mi[1m[31mc[0m[39m[1m[31mc[1m[31mh[0m[39m[0m[32mw[0m[32mh[0m[32mi[0m[32mc[0m[32mh[39m[32mh[32m [39m[32mh[39m[39m s[4ms[24m[4ms[4mc[24m[4mc[4mr[24m[4mr[4mi[24m[4mi[4mp[24m[4mp[4mt[24m[?1l>[?2004l[24ms[24mc[24mr[24mi[24mp[24mt
-]2;alias | /usr/bin/which --tty-only --read-alias --show-tilde --show-dot script\kwhich\/usr/bin/script
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hl[32ml[39m[32ml[39m[90ms[39m[32ml[32ms[39m[?1l>[?2004l
-]2;ls --color=tty\kls\[0m[01;34mconfig[0m  [01;34mscripts[0m  typescript
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hs[4ms[24m[4ms[24m[90mcript[39m[4ms[39m[4mc[24m[4ms[4mc[39m[4mr[24m[4mr[39m[4mi[24m[4mi[39m[4mp[24m[4mp[39m[4mt[24m[24m[32ms[24m[32mc[24m[32mr[24m[32mi[24m[32mp[24m[32mt[39m[39ms[39mc[39mr[39mi[39mp[39mt
-[J[0mscript        [Jscriptlive    [Jscriptreplay  [J[01;34mscripts[0m/    [JM[0m[27m[24m[3Cscript[K[32ms[32mc[32mr[32mi[32mp[32mt[39m[32mt[32ma[39m[1m[31ms[1m[31mc[1m[31mr[1m[31mi[1m[31mp[1m[31mt[1m[31ma[0m[39m
-[JM[10C[0m[39ms[0m[39mc[0m[39mr[0m[39mi[0m[39mp[0m[39mt[0m[39ma[1m[31ms[1m[31mc[1m[31mr[1m[31mi[1m[31mp[1m[31mt[1m[31ma[0m[39m[1m[31mt[0m[39m[0m[39m [0m[32ms[0m[32mc[0m[32mr[0m[32mi[0m[32mp[0m[32mt[39m[32mt[32ms[39m[4m[32ms[4m[32mc[4m[32mr[4m[32mi[4m[32mp[4m[32mt[4m[32ms[24m[39m[90m.sh[39m[4m[32ms[1m[4m[32m/[0m[24m[39m[39m [39m [8D[24m[1m[31ms[24m[1m[31mc[24m[1m[31mr[24m[1m[31mi[24m[1m[31mp[24m[1m[31mt[24m[1m[31ms[24m[1m[31m/[1m[31minstallation-commands.awk[0m[39m[1m [0m[0m [9D[13D[8D[0m[39ma[1m[31ms[1m[31mc[1m[31mr[1m[31mi[1m[31mp[1m[31mt[1m[31ms[1m[31m/[1m[31mi[1m[31mn[1m[31ms[1m[31mt[1m[31ma[1m[31ml[1m[31ml[1m[31ma[1m[31mt[1m[31mi[1m[31mo[1m[31mn[1m[31m-[1m[31mc[1m[31mo[1m[31mm[1m[31mm[1m[31ma[1m[31mn[1m[31md[1m[31ms[1m[31m.[1m[31ma[1m[31mw[1m[31mk[0m[39m[33D[1m[31ma[1m[31ma[1m[31mw[1m[31ms[1m[31mc[1m[31mr[1m[31mi[1m[31mp[1m[31mt[1m[31ms[1m[31m/[1m[31mi[1m[31mn[1m[31ms[1m[31mt[1m[31ma[1m[31ml[1m[31ml[1m[31ma[1m[31mt[1m[31mi[1m[31mo[1m[31mn[1m[31m-[1m[31mc[1m[31mo[1m[31mm[1m[31mm[1m[31ma[1m[31mn[1m[31md[1m[31ms[1m[31m.[1m[31ma[1m[31mw[1m[31mk[0m[39m[33D[1m[31mk[1m[31ms[1m[31mc[1m[31mr[1m[31mi[1m[31mp[1m[31mt[1m[31ms[1m[31m/[1m[31mi[1m[31mn[1m[31ms[1m[31mt[1m[31ma[1m[31ml[1m[31ml[1m[31ma[1m[31mt[1m[31mi[1m[31mo[1m[31mn[1m[31m-[1m[31mc[1m[31mo[1m[31mm[1m[31mm[1m[31ma[1m[31mn[1m[31md[1m[31ms[1m[31m.[1m[31ma[1m[31mw[1m[31mk[0m[39m[33D[1m[31m [1m[31ms[1m[31mc[1m[31mr[1m[31mi[1m[31mp[1m[31mt[1m[31ms[1m[31m/[1m[31mi[1m[31mn[1m[31ms[1m[31mt[1m[31ma[1m[31ml[1m[31ml[1m[31ma[1m[31mt[1m[31mi[1m[31mo[1m[31mn[1m[31m-[1m[31mc[1m[31mo[1m[31mm[1m[31mm[1m[31ma[1m[31mn[1m[31md[1m[31ms[1m[31m.[1m[31ma[1m[31mw[1m[31mk[0m[39m[33D[0m[32ma[0m[32mw[0m[32mk[39m[0m[39m [0m[39m[4ms[0m[39m[4mc[0m[39m[4mr[0m[39m[4mi[0m[39m[4mp[0m[39m[4mt[0m[39m[4ms[0m[39m[4m/[0m[39m[4mi[0m[39m[4mn[0m[39m[4ms[0m[39m[4mt[0m[39m[4ma[0m[39m[4ml[0m[39m[4ml[0m[39m[4ma[0m[39m[4mt[0m[39m[4mi[0m[39m[4mo[0m[39m[4mn[0m[39m[4m-[0m[39m[4mc[0m[39m[4mo[0m[39m[4mm[0m[39m[4mm[0m[39m[4ma[0m[39m[4mn[0m[39m[4md[0m[39m[4ms[0m[39m[4m.[0m[39m[4ma[0m[39m[4mw[0m[39m[4mk[24m[33D[24m-[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m[33D[24ms[24mc[24mr[24mi[24mp[24mt[24ms[24m/[24mi[24mn[24ms[24mt[24ma[24ml[24ml[24ma[24mt[24mi[24mo[24mn[24m-[24mc[24mo[24mm[24mm[24ma[24mn[24md[24ms[24m.[24ma[24mw[24mk[33D scripts/installation-commands.awk[33D[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m[33D[24mf[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m[33D[24ms[24mc[24mr[24mi[24mp[24mt[24ms[24m/[24mi[24mn[24ms[24mt[24ma[24ml[24ml[24ma[24mt[24mi[24mo[24mn[24m-[24mc[24mo[24mm[24mm[24ma[24mn[24md[24ms[24m.[24ma[24mw[24mk[33D scripts/installation-commands.awk[33D[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m[33D[P[33C [34D[24ms[24mc[24mr[24mi[24mp[24mt[24ms[24m/[24mi[24mn[24ms[24mt[24ma[24ml[24ml[24ma[24mt[24mi[24mo[24mn[24m-[24mc[24mo[24mm[24mm[24ma[24mn[24md[24ms[24m.[24ma[24mw[24mk[33D[P[33C [34D[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m[33D[P[33C [34D[24ms[24mc[24mr[24mi[24mp[24mt[24ms[24m/[24mi[24mn[24ms[24mt[24ma[24ml[24ml[24ma[24mt[24mi[24mo[24mn[24m-[24mc[24mo[24mm[24mm[24ma[24mn[24md[24ms[24m.[24ma[24mw[24mk[33Dfscripts/installation-commands.awk[33D scripts/installation-commands.awk[33D[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m[33D[8C[13C[9C[3C[4mk[4m [24m[4mk[24m[24m s[4ms[24m[24m 
-[J[J[01;34mconfig[0m/     [J[01;34mscripts[0m/    [Jtypescript[JM[0m[27m[24m[3C[32mawk[39m -f [4mscripts/installation-commands.awk[24m[K[1C[4mconfig[1m[4m/[0m[24m
-[J[7mconfig/   [0m  [J[01;34mscripts[0m/    [Jtypescript[JM[0m[27m[24m[3C[32mawk[39m -f [4mscripts/installation-commands.awk[24m [4mconfig[1m[4m/[0m[24m[K
-[7mconfig/   [0m  [7mconfig/   [0m  M[0m[27m[24m[3C[32mawk[39m -f [4mscripts/installation-commands.awk[24m [4mconfig[1m[4m/[0m[24m[K
-[JM[51C[24mc[24mo[24mn[24mf[24mi[24mg[0m[24m/
-[J[J[0mcustom       [Jdebootstrap  [Jdeps       [JM[0m[27m[24m[3C[32mawk[39m -f [4mscripts/installation-commands.awk[24m config/[K[4mc[4mo[4mn[4mf[4mi[4mg[4m/[24m[4m/[4mcustom[24m
-[J[7mcustom     [0m  [Jdebootstrap  [Jdeps       [JM[0m[27m[24m[3C[32mawk[39m -f [4mscripts/installation-commands.awk[24m [4mconfig/custom[24m[K
-[7mcustom     [0m  [7mcustom     [0m  M[0m[27m[24m[3C[32mawk[39m -f [4mscripts/installation-commands.awk[24m [4mconfig/custom[24m[K[4md[4me[4mb[4mo[4mo[4mt[4mstrap[24m
-[13C[7mdebootstrap[0m  custom       M[0m[27m[24m[3C[32mawk[39m -f [4mscripts/installation-commands.awk[24m [4mconfig/debootstrap[24m[K[9D[4mp[4ms[24m[24m [24m [24m [24m [24m [24m [24m 
-[26C[7mdeps       [0m[13Cdebootstrap  M[0m[27m[24m[3C[32mawk[39m -f [4mscripts/installation-commands.awk[24m [4mconfig/deps[24m[K
-[JM[55C[1m [0m[0m [?1l>[?2004l
-[J]2;awk -f scripts/installation-commands.awk config/deps\kawk\awk: scripts/installation-commands.awk:22:         for (command in get_commands(source, deps[source])) {
-awk: scripts/installation-commands.awk:22:                         ^ syntax error
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;230;126;128m➜ [0m  [K[?1h=[?2004hawk -f scripts/installation-commands.awk config/deps[52D[32ma[32mw[32mk[39m[4C[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[?1l>[?2004l
-]2;awk -f scripts/installation-commands.awk config/deps\kawk\awk: scripts/installation-commands.awk:48:     gsub(deps, OFS, " ", dependencies)
-awk: scripts/installation-commands.awk:48:                                      ^ 4 is invalid as number of arguments for gsub
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;230;126;128m➜ [0m  [K[?1h=[?2004hawk -f scripts/installation-commands.awk config/deps[52D[32ma[32mw[32mk[39m[4C[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[?1l>[?2004l
-]2;awk -f scripts/installation-commands.awk config/deps\kawk\awk: scripts/installation-commands.awk:47: error: function `get_apt_commands': parameter #3, `deps', duplicates parameter #1
-awk: scripts/installation-commands.awk:75: error: function name `get_commands' previously defined
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;230;126;128m➜ [0m  [K[?1h=[?2004hawk -f scripts/installation-commands.awk config/deps[52D[32ma[32mw[32mk[39m[4C[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[?1l>[?2004l
-]2;awk -f scripts/installation-commands.awk config/deps\kawk\awk: scripts/installation-commands.awk:21: (FILENAME=config/deps FNR=36) fatal: attempt to use array `deps' in a scalar context
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;230;126;128m➜ [0m  [K[?1h=[?2004hawk -f scripts/installation-commands.awk config/deps[52D[32ma[32mw[32mk[39m[4C[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[?1l>[?2004l
-]2;awk -f scripts/installation-commands.awk config/deps\kawk\
-extrepo
-snap
-Source
-command
-apt
-1
-awk: scripts/installation-commands.awk:27: (FILENAME=config/deps FNR=36) fatal: attempt to use scalar `commands' as an array
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;230;126;128m➜ [0m  [K[?1h=[?2004hawk -f scripts/installation-commands.awk config/deps[52D[32ma[32mw[32mk[39m[4C[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[?1l>[?2004l
-]2;awk -f scripts/installation-commands.awk config/deps\kawk\awk: scripts/installation-commands.awk:50: (FILENAME=config/deps FNR=36) fatal: attempt to use array `commands' in a scalar context
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;230;126;128m➜ [0m  [K[?1h=[?2004hawk -f scripts/installation-commands.awk config/deps[52D[32ma[32mw[32mk[39m[4C[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[?1l>[?2004l
-]2;awk -f scripts/installation-commands.awk config/deps\kawk\apt update
-apt install -y %%%linux-image-amd64%%%grub-pc%%%grub-efi-amd64-signed%%%systemd-sysv%%%sway%%%waybar%%%kitty%%%zsh%%%podman%%%grim%%%slurp%%%wireplumber%%%pipewire-audio%%%network-manager%%%blueman%%%cliphist%%%sway-notification-center%%%lightdm%%%tmux%%%htop%%%papers%%%mupdf%%%incus%%%swayimg%%%celluloid%%%mpv%%%thunar%%%extrepo%%%snapd
-awk: scripts/installation-commands.awk:51: (FILENAME=config/deps FNR=36) fatal: split: second argument is not an array
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;230;126;128m➜ [0m  [K[?1h=[?2004hawk -f scripts/installation-commands.awk config/deps[52D[32ma[32mw[32mk[39m[4C[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[?1l>[?2004l
-]2;awk -f scripts/installation-commands.awk config/deps\kawk\apt update
-apt install -y  linux-image-amd64 grub-pc grub-efi-amd64-signed systemd-sysv sway waybar kitty zsh podman grim slurp wireplumber pipewire-audio network-manager blueman cliphist sway-notification-center lightdm tmux htop papers mupdf incus swayimg celluloid mpv thunar extrepo snapd
-awk: scripts/installation-commands.awk:51: (FILENAME=config/deps FNR=36) fatal: split: second argument is not an array
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;230;126;128m➜ [0m  [K[?1h=[?2004hawk -f scripts/installation-commands.awk config/deps[52D[32ma[32mw[32mk[39m[4C[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[?1l>[?2004l
-]2;awk -f scripts/installation-commands.awk config/deps\kawk\apt update
-apt install -y  linux-image-amd64 grub-pc grub-efi-amd64-signed systemd-sysv sway waybar kitty zsh podman grim slurp wireplumber pipewire-audio network-manager blueman cliphist sway-notification-center lightdm tmux htop papers mupdf incus swayimg celluloid mpv thunar extrepo snapd
-awk: scripts/installation-commands.awk:51: (FILENAME=config/deps FNR=36) fatal: split: second argument is not an array
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;230;126;128m➜ [0m  [K[?1h=[?2004hawk -f scripts/installation-commands.awk config/deps[52D[32ma[32mw[32mk[39m[4C[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[?1l>[?2004l
-]2;awk -f scripts/installation-commands.awk config/deps\kawk\apt update
-apt install -y  linux-image-amd64 grub-pc grub-efi-amd64-signed systemd-sysv sway waybar kitty zsh podman grim slurp wireplumber pipewire-audio network-manager blueman cliphist sway-notification-center lightdm tmux htop papers mupdf incus swayimg celluloid mpv thunar extrepo snapd
-awk: scripts/installation-commands.awk:51: (FILENAME=config/deps FNR=36) fatal: split: second argument is not an array
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;230;126;128m➜ [0m  [K[?1h=[?2004hawk -f scripts/installation-commands.awk config/deps[52D[32ma[32mw[32mk[39m[4C[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[?1l>[?2004l
-]2;awk -f scripts/installation-commands.awk config/deps\kawk\apt update
-apt install -y  linux-image-amd64 grub-pc grub-efi-amd64-signed systemd-sysv sway waybar kitty zsh podman grim slurp wireplumber pipewire-audio network-manager blueman cliphist sway-notification-center lightdm tmux htop papers mupdf incus swayimg celluloid mpv thunar extrepo snapd
-
-extrepo enable 1
-extrepo update 1
-extrepo enable 2
-extrepo update 2
-apt update
-apt install -y  1 2
-
-snap install 3
-awk: scripts/installation-commands.awk:37: (FILENAME=config/deps FNR=36) fatal: function `get_command' not defined
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;230;126;128m➜ [0m  [K[?1h=[?2004hawk -f scripts/installation-commands.awk config/deps[52D[32ma[32mw[32mk[39m[4C[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[?1l>[?2004l
-]2;awk -f scripts/installation-commands.awk config/deps\kawk\apt update
-apt install -y  linux-image-amd64 grub-pc grub-efi-amd64-signed systemd-sysv sway waybar kitty zsh podman grim slurp wireplumber pipewire-audio network-manager blueman cliphist sway-notification-center lightdm tmux htop papers mupdf incus swayimg celluloid mpv thunar extrepo snapd
-
-extrepo enable librewolf
-extrepo update librewolf
-apt update
-apt install -y  2
-
-snap install thunderbird
-awk: scripts/installation-commands.awk:37: (FILENAME=config/deps FNR=36) fatal: function `get_command' not defined
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;230;126;128m➜ [0m  [K[?1h=[?2004hawk -f scripts/installation-commands.awk config/deps[52D[32ma[32mw[32mk[39m[4C[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[?1l>[?2004l
-]2;awk -f scripts/installation-commands.awk config/deps\kawk\apt update
-apt install -y  linux-image-amd64 grub-pc grub-efi-amd64-signed systemd-sysv sway waybar kitty zsh podman grim slurp wireplumber pipewire-audio network-manager blueman cliphist sway-notification-center lightdm tmux htop papers mupdf incus swayimg celluloid mpv thunar extrepo snapd
-
-extrepo enable librewolf
-extrepo update librewolf
-apt update
-apt install -y  librewolf
-
-snap install thunderbird
-awk: scripts/installation-commands.awk:37: (FILENAME=config/deps FNR=36) fatal: function `get_command' not defined
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;230;126;128m➜ [0m  [K[?1h=[?2004hc[4mc[24m[4mc[24m[90mlear[39m[4mc[39m[4mñ[24m[39m [39m [39m [24m[1m[31mc[24m[1m[31mñ[0m[39m[90mear[39m[1m[31mc[0m[39m[0m[39m [39m [39m [39m [0m[39m[4mc[24m[4mc[24m[90mlear[39m[24m [39m [39m [39m [39m c[4mc[24m[4mc[24m[90mlear[39m[4mc[39m[4ml[24m[24m[1m[31mc[24m[1m[31ml[0m[39m[1m[31mc[1m[31ml[1m[31me[0m[39m[1m[31me[1m[31ma[0m[39m[1m[31ma[1m[31mr[0m[39m[0m[32mc[0m[32ml[0m[32me[0m[32ma[0m[32mr[39m[?1l>[?2004l
-]2;clear\kclear\[H[J[3J[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hclear[32mc[32ml[32me[32ma[32mr[39m[32ma[32mw[32mk[32m [32m-[39mf scripts/installation-commands.awk config/deps[50D[32mk[39m[39m [39m-[2C[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[?1l>[?2004l
-]2;awk -f scripts/installation-commands.awk config/deps\kawk\apt update
-apt install -y  linux-image-amd64 grub-pc grub-efi-amd64-signed systemd-sysv sway waybar kitty zsh podman grim slurp wireplumber pipewire-audio network-manager blueman cliphist sway-notification-center lightdm tmux htop papers mupdf incus swayimg celluloid mpv thunar extrepo snapd
-
-extrepo enable librewolf
-extrepo update librewolf
-apt update
-apt install -y  librewolf
-
-snap install thunderbird
-awk: scripts/installation-commands.awk:37: (FILENAME=config/deps FNR=36) fatal: function `get_command' not defined
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;230;126;128m➜ [0m  [K[?1h=[?2004h[?1l>[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hawk -f scripts/installation-commands.awk config/deps[52D[32ma[32mw[32mk[39m[4C[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[?1l>[?2004l
-]2;awk -f scripts/installation-commands.awk config/deps\kawk\apt update
-apt install -y  linux-image-amd64 grub-pc grub-efi-amd64-signed systemd-sysv sway waybar kitty zsh podman grim slurp wireplumber pipewire-audio network-manager blueman cliphist sway-notification-center lightdm tmux htop papers mupdf incus swayimg celluloid mpv thunar extrepo snapd
-
-extrepo enable librewolf
-extrepo update librewolf
-apt update
-apt install -y  librewolf
-
-snap install thunderbird
-
-NONINTERACTIVE=1
-/bin/bash
--c
-"$(curl
--fsSL
-https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
---
---path
-/opt/brew
-brew install 
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hawk -f scripts/installation-commands.awk config/deps[52D[32ma[32mw[32mk[39m[4C[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[?1l>[?2004l
-]2;awk -f scripts/installation-commands.awk config/deps\kawk\apt update
-apt install -y  linux-image-amd64 grub-pc grub-efi-amd64-signed systemd-sysv sway waybar kitty zsh podman grim slurp wireplumber pipewire-audio network-manager blueman cliphist sway-notification-center lightdm tmux htop papers mupdf incus swayimg celluloid mpv thunar extrepo snapd
-
-extrepo enable librewolf
-extrepo update librewolf
-apt update
-apt install -y  librewolf
-
-snap install thunderbird
-
-NONINTERACTIVE=1
-/bin/bash
--c
-"$(curl
--fsSL
-https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
---
---path
-/opt/brew
-
-NONINTERACTIVE=1
-/bin/bash
--c
-"$(curl
--fsSL
-https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
---
---path
-/opt/brew
-brew install 
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hawk -f scripts/installation-commands.awk config/deps[52D[32ma[32mw[32mk[39m[4C[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[?1l>[?2004l
-]2;awk -f scripts/installation-commands.awk config/deps\kawk\apt update
-apt install -y  linux-image-amd64 grub-pc grub-efi-amd64-signed systemd-sysv sway waybar kitty zsh podman grim slurp wireplumber pipewire-audio network-manager blueman cliphist sway-notification-center lightdm tmux htop papers mupdf incus swayimg celluloid mpv thunar extrepo snapd
-
-extrepo enable librewolf
-extrepo update librewolf
-apt update
-apt install -y  librewolf
-
-snap install thunderbird
-1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11
-
-NONINTERACTIVE=1
-/bin/bash
--c
-"$(curl
--fsSL
-https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
---
---path
-/opt/brew
-brew install 
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hawk -f scripts/installation-commands.awk config/deps[52D[32ma[32mw[32mk[39m[4C[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[?1l>[?2004l
-]2;awk -f scripts/installation-commands.awk config/deps\kawk\apt update
-apt install -y  linux-image-amd64 grub-pc grub-efi-amd64-signed systemd-sysv sway waybar kitty zsh podman grim slurp wireplumber pipewire-audio network-manager blueman cliphist sway-notification-center lightdm tmux htop papers mupdf incus swayimg celluloid mpv thunar extrepo snapd
-
-extrepo enable librewolf
-extrepo update librewolf
-apt update
-apt install -y  librewolf
-
-snap install thunderbird
-%%%%%%NONINTERACTIVE=1%%%/bin/bash%%%-c%%%"$(curl%%%-fsSL%%%https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"%%%--%%%--path%%%/opt/brew
-
-NONINTERACTIVE=1
-/bin/bash
--c
-"$(curl
--fsSL
-https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
---
---path
-/opt/brew
-brew install 
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hawk -f scripts/installation-commands.awk config/deps[52D[32ma[32mw[32mk[39m[4C[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[?1l>[?2004l
-]2;awk -f scripts/installation-commands.awk config/deps\kawk\apt update
-apt install -y  linux-image-amd64 grub-pc grub-efi-amd64-signed systemd-sysv sway waybar kitty zsh podman grim slurp wireplumber pipewire-audio network-manager blueman cliphist sway-notification-center lightdm tmux htop papers mupdf incus swayimg celluloid mpv thunar extrepo snapd
-
-extrepo enable librewolf
-extrepo update librewolf
-apt update
-apt install -y  librewolf
-
-snap install  thunderbird
-
- NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" -- --path /opt/brew
-brew install 
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hawk -f scripts/installation-commands.awk config/deps[52D[32ma[32mw[32mk[39m[4C[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[?1l>[?2004l
-]2;awk -f scripts/installation-commands.awk config/deps\kawk\awk: scripts/installation-commands.awk:81: error: `continue' is not allowed outside a loop
-awk: scripts/installation-commands.awk:81: error: `continue' is not allowed outside a loop
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;230;126;128m➜ [0m  [K[?1h=[?2004hawk -f scripts/installation-commands.awk config/deps[52D[32ma[32mw[32mk[39m[4C[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[?1l>[?2004l
-]2;awk -f scripts/installation-commands.awk config/deps\kawk\apt update
-apt install -y  linux-image-amd64 grub-pc grub-efi-amd64-signed systemd-sysv sway waybar kitty zsh podman grim slurp wireplumber pipewire-audio network-manager blueman cliphist sway-notification-center lightdm tmux htop papers mupdf incus swayimg celluloid mpv thunar extrepo snapd
-
-extrepo enable librewolf
-extrepo update librewolf
-apt update
-apt install -y  librewolf
-
-snap install  thunderbird
-
- NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" -- --path /opt/brew
-
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hw[32mw[39m[32mw[39m[90mhich script[39m[11D[32mw[32mh[39m[1m[31mw[1m[31mh[0m[39m[1m[31mw[1m[31mh[1m[31mi[0m[39m[1m[31mi[1m[31mc[0m[39m[1m[31mc[1m[31mh[0m[39m[0m[32mw[0m[32mh[0m[32mi[0m[32mc[0m[32mh[39m[32mh[32m [39m[32mh[39m[39m [39mk[39m [39m [39m [39m [39m [90meyd[39m[39mu[39m [39m bectx[?1l>[?2004l
-]2;alias | /usr/bin/which --tty-only --read-alias --show-tilde --show-dot kubect\kwhich\/home/linuxbrew/.linuxbrew/bin/kubectx
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hwhich kubectx[13D[32mw[32mh[32mi[32mc[32mh[39m[8C [90mx[39m[39ml[?1l>[?2004l
-]2;alias | /usr/bin/which --tty-only --read-alias --show-tilde --show-dot kubect\kwhich\~/Downloads/google-cloud-sdk/bin/kubectl
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hw[32mw[39m[32mw[39m[90mhich kubectl[39m[12D[32mw[32mh[39m[1m[31mw[1m[31mh[0m[39m[1m[31mw[1m[31mh[1m[31mi[0m[39m[1m[31mi[1m[31mt[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [9D[1m[31mt[1m[31mc[0m[39m[1m[31mc[1m[31mh[0m[39m[1m[31mc[0m[39m[0m[39m [1m[31mt[0m[39m[0m[39m [1m[31mi[0m[39m[0m[39m [90mch kubectl[39m[10D[1m[31mw[1m[31mh[0m[39m[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[90mich kubectl[39m[11D[1m[31mw[0m[39m[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[0m[32mw[39m[32mw[39m[90mhich kubectl[39m[12D[32mw[32mi[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[1m[31mw[1m[31mi[0m[39m[1m[31mw[1m[31mi[1m[31mt[0m[39m[1m[31mt[1m[31mc[0m[39m[1m[31mc[1m[31mh[0m[39m[1m[31mc[0m[39m[0m[39m [1m[31mt[0m[39m[0m[39m [1m[31mw[1m[31mi[0m[39m[0m[39m [1m[31mw[0m[39m[0m[39m [0m[32mw[39m[32mw[39m[90mhich kubectl[39m[12D[32mw[32mh[39m[1m[31mw[1m[31mh[0m[39m[1m[31mw[1m[31mh[1m[31mi[0m[39m[1m[31mi[1m[31mc[0m[39m[1m[31mc[1m[31mh[0m[39m[0m[32mw[0m[32mh[0m[32mi[0m[32mc[0m[32mh[39m[32mh[32ms[39m[39m [39m [39m [39m [39m [39m [39m [1m[31mw[1m[31mh[1m[31mi[1m[31mc[1m[31mh[1m[31ms[0m[39m[1m[31mh[0m[39m[0m[39m [0m[32mw[0m[32mh[0m[32mi[0m[32mc[0m[32mh[39m[90m kubectl[39m[8D[32mh[32ma[39m[39m [39m [39m [39m [39m [39m [39m [1m[31mw[1m[31mh[1m[31mi[1m[31mc[1m[31mh[1m[31ma[0m[39m[1m[31ma[1m[31ml[0m[39m[1m[31ml[1m[31ml[0m[39m[1m[31m-[1m[31ma[1m[31ml[1m[31ml[0m[39m[1m[31ma[1m[31ml[1m[31ml[0m[39m[0m[39m [1m[31ml[1m[31ml[0m[39m[0m[39m [1m[31ml[0m[39m[0m[39m [1m[31mh[0m[39m[0m[39m [0m[32mw[0m[32mh[0m[32mi[0m[32mc[0m[32mh[39m[90m kubectl[39m[8D[32mc[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [9D[1m[31mw[1m[31mh[1m[31mi[1m[31mc[0m[39m[90mh kubectl[39m[9D[1m[31mi[0m[39m[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [10D[90mch kubectl[39m[10D[1m[31mw[1m[31mh[0m[39m[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[90mich kubectl[39m[11D[1m[31mw[0m[39m[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[0m[32mw[39m[32mw[39m[90mhich kubectl[39m[12D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [13Dl[32ml[39m[32ml[39m[90ms[39m[32ml[32ms[39m[32ml[32ms[32m [39m[32ml[32ms[39m[39m [90m~/.var/app[39m[10D[39m/[39m [39m [39m [39m [39m [39m [39m [39m [39m [9D[4m/[24m[90metc/sddm.conf[39m[13D[4m/[39m[4mh[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [12D[90mome/familia/.emacs.d/straight/repos/emacsmirror-mirror/ -a[39m[58D[4mh[39m[4mo[24m[4mo[39m[4mm[39m[4me[39m[1m[4m/[0m[24m[1m[4m/[39m[1m[4ml[0m[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [53D[0m[4m/[0m[4ml[24m[4ml[4mi[24m[4mi[4mn[24m[4mn[4mu[24m[4mu[4mxbrew[1m[4m/[0m[24m[1m[4m/[1m[4m.[0m[24m[0m[4m/[0m[4m.[24m[4m.[4ml[24m[4ml[4mi[24m[4mi[4mnuxbrew[1m[4m/[0m[24m[1m[4m/[1m[4mb[0m[24m[0m[4m/[0m[4mb[24m[4mb[4mi[24m[4mi[4mn[1m[4m/[0m[24m[4mn[24m[0m[24m [?1l>[?2004l
-]2;ls --color=tty /home/linuxbrew/.linuxbrew/bin\kls\[0m[01;36madaparse[0m  [01;36mbzip2[0m                 [01;36mdbus-update-activation-environment[0m  [01;36mhelm-docs[0m      [01;36mkubens[0m    [01;36mlzmore[0m            [01;36mprotoc-gen-upb[0m                   [01;36msqlc[0m                        [01;36munlzma[0m     [01;36mxzless[0m
-[01;36madig[0m      [01;36mbzip2recover[0m          [01;36mdbus-uuidgen[0m                        [01;36micu-config[0m     [01;36mlz4[0m       [01;36mmakeconv[0m          [01;36mprotoc-gen-upb-36.2.0[0m            [01;36msqlite3[0m                     [01;36munxz[0m       [01;36mxzmore[0m
-[01;36mahost[0m     [01;36mbzless[0m                [01;36mderb[0m                                [01;36micuexportdata[0m  [01;36mlz4c[0m      [01;36mncurses6-config[0m   [01;36mprotoc-gen-upbdefs[0m               [01;36mstarship[0m                    [01;36munzstd[0m     [01;36mzstd[0m
-[01;36margocd[0m    [01;36mbzmore[0m                [01;36mfastbase64[0m                          [01;36micuinfo[0m        [01;36mlz4cat[0m    [01;36mncursesw6-config[0m  [01;36mprotoc-gen-upbdefs-36.2.0[0m        [01;36msutf[0m                        [01;36mwheel3[0m     [01;36mzstdcat[0m
-[01;36masdf[0m      [01;36mcaptoinfo[0m             [01;36mfastbase64.coreutils[0m                [01;36midle3[0m          [01;36mlzcat[0m     [01;36mnode[0m              [01;36mprotoc-gen-upb_minitable[0m         [01;36msutf-benchmark[0m              [01;36mwheel3.14[0m  [01;36mzstdgrep[0m
-[01;36mbrew[0m      [01;36mclear[0m                 [01;36mgenbrk[0m                              [01;36midle3.14[0m       [01;36mlzcmp[0m     [01;36mnpm[0m               [01;36mprotoc-gen-upb_minitable-36.2.0[0m  [01;36mtabs[0m                        [01;36mxmlwf[0m      [01;36mzstdless[0m
-[01;36mbrotli[0m    [01;36mc_rehash[0m              [01;36mgencfu[0m                              [01;36minfocmp[0m        [01;36mlzdiff[0m    [01;36mnpx[0m               [01;36mpydoc3[0m                           [01;36mtic[0m                         [01;36mxz[0m         [01;36mzstdmt[0m
-[01;36mbunzip2[0m   [01;36mdbus-cleanup-sockets[0m  [01;36mgencnval[0m                            [01;36minfotocap[0m      [01;36mlzegrep[0m   [01;36mopenssl[0m           [01;36mpydoc3.14[0m                        [01;36mtoe[0m                         [01;36mxzcat[0m
-[01;36mbzcat[0m     [01;36mdbus-daemon[0m           [01;36mgendict[0m                             [01;36mkind[0m           [01;36mlzfgrep[0m   [01;36mperlnavigator[0m     [01;36mpython3[0m                          [01;36mtput[0m                        [01;36mxzcmp[0m
-[01;36mbzcmp[0m     [01;36mdbus-launch[0m           [01;36mgenrb[0m                               [01;36mkubecfg[0m        [01;36mlzgrep[0m    [01;36mpip3[0m              [01;36mpython3.14[0m                       [01;36mtsc[0m                         [01;36mxzdec[0m
-[01;36mbzdiff[0m    [01;36mdbus-monitor[0m          [01;36mgo[0m                                  [01;36mkubeconform[0m    [01;36mlzless[0m    [01;36mpip3.14[0m           [01;36mpython3.14-config[0m                [01;36mtset[0m                        [01;36mxzdiff[0m
-[01;36mbzegrep[0m   [01;36mdbus-run-session[0m      [01;36mgofmt[0m                               [01;36mkubectl-ctx[0m    [01;36mlzma[0m      [01;36mpkgdata[0m           [01;36mpython3-config[0m                   [01;36mtypescript-language-server[0m  [01;36mxzegrep[0m
-[01;36mbzfgrep[0m   [01;36mdbus-send[0m             [01;36mgolangci-lint[0m                       [01;36mkubectl-ns[0m     [01;36mlzmadec[0m   [01;36mprotoc[0m            [01;36mpzstd[0m                            [01;36muconv[0m                       [01;36mxzfgrep[0m
-[01;36mbzgrep[0m    [01;36mdbus-test-tool[0m        [01;36mgopls[0m                               [01;36mkubectx[0m        [01;36mlzmainfo[0m  [01;36mprotoc-36.2.0[0m     [01;36mreset[0m                            [01;36munlz4[0m                       [01;36mxzgrep[0m
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hw[32mw[39m[32mw[39m[90mhich kubectl[39m[12D[32mw[32mh[39m[1m[31mw[1m[31mh[0m[39m[1m[31mw[1m[31mh[1m[31mi[0m[39m[1m[31mi[1m[31mc[0m[39m[1m[31mc[1m[31mh[0m[39m[0m[32mw[0m[32mh[0m[32mi[0m[32mc[0m[32mh[39m[32mh[32m [39m[32mh[39m[39m [39mb[39m [39m [39m [39m [39m [39m rew[?1l>[?2004l
-]2;alias | /usr/bin/which --tty-only --read-alias --show-tilde --show-dot brew\kwhich\/home/linuxbrew/.linuxbrew/bin/brew
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hwhich brew[10D[32mw[32mh[32mi[32mc[32mh[39m[5C[10D[32ml[32ms[32m [32m/[32mh[39mome/linuxbrew/.linuxbrew/bin[33D[32ml[32ms[39m[39m [39m[4m/[39m[4mh[4mo[4mm[4me[4m/[4ml[4mi[4mn[4mu[4mx[4mb[4mr[4me[4mw[4m/[4m.[4ml[4mi[4mn[4mu[4mx[4mb[4mr[4me[4mw[4m/[4mb[4mi[4mn[24m[?1l>[?2004l
-]2;ls --color=tty /home/linuxbrew/.linuxbrew/bin\kls\[0m[01;36madaparse[0m  [01;36mbzip2[0m                 [01;36mdbus-update-activation-environment[0m  [01;36mhelm-docs[0m      [01;36mkubens[0m    [01;36mlzmore[0m            [01;36mprotoc-gen-upb[0m                   [01;36msqlc[0m                        [01;36munlzma[0m     [01;36mxzless[0m
-[01;36madig[0m      [01;36mbzip2recover[0m          [01;36mdbus-uuidgen[0m                        [01;36micu-config[0m     [01;36mlz4[0m       [01;36mmakeconv[0m          [01;36mprotoc-gen-upb-36.2.0[0m            [01;36msqlite3[0m                     [01;36munxz[0m       [01;36mxzmore[0m
-[01;36mahost[0m     [01;36mbzless[0m                [01;36mderb[0m                                [01;36micuexportdata[0m  [01;36mlz4c[0m      [01;36mncurses6-config[0m   [01;36mprotoc-gen-upbdefs[0m               [01;36mstarship[0m                    [01;36munzstd[0m     [01;36mzstd[0m
-[01;36margocd[0m    [01;36mbzmore[0m                [01;36mfastbase64[0m                          [01;36micuinfo[0m        [01;36mlz4cat[0m    [01;36mncursesw6-config[0m  [01;36mprotoc-gen-upbdefs-36.2.0[0m        [01;36msutf[0m                        [01;36mwheel3[0m     [01;36mzstdcat[0m
-[01;36masdf[0m      [01;36mcaptoinfo[0m             [01;36mfastbase64.coreutils[0m                [01;36midle3[0m          [01;36mlzcat[0m     [01;36mnode[0m              [01;36mprotoc-gen-upb_minitable[0m         [01;36msutf-benchmark[0m              [01;36mwheel3.14[0m  [01;36mzstdgrep[0m
-[01;36mbrew[0m      [01;36mclear[0m                 [01;36mgenbrk[0m                              [01;36midle3.14[0m       [01;36mlzcmp[0m     [01;36mnpm[0m               [01;36mprotoc-gen-upb_minitable-36.2.0[0m  [01;36mtabs[0m                        [01;36mxmlwf[0m      [01;36mzstdless[0m
-[01;36mbrotli[0m    [01;36mc_rehash[0m              [01;36mgencfu[0m                              [01;36minfocmp[0m        [01;36mlzdiff[0m    [01;36mnpx[0m               [01;36mpydoc3[0m                           [01;36mtic[0m                         [01;36mxz[0m         [01;36mzstdmt[0m
-[01;36mbunzip2[0m   [01;36mdbus-cleanup-sockets[0m  [01;36mgencnval[0m                            [01;36minfotocap[0m      [01;36mlzegrep[0m   [01;36mopenssl[0m           [01;36mpydoc3.14[0m                        [01;36mtoe[0m                         [01;36mxzcat[0m
-[01;36mbzcat[0m     [01;36mdbus-daemon[0m           [01;36mgendict[0m                             [01;36mkind[0m           [01;36mlzfgrep[0m   [01;36mperlnavigator[0m     [01;36mpython3[0m                          [01;36mtput[0m                        [01;36mxzcmp[0m
-[01;36mbzcmp[0m     [01;36mdbus-launch[0m           [01;36mgenrb[0m                               [01;36mkubecfg[0m        [01;36mlzgrep[0m    [01;36mpip3[0m              [01;36mpython3.14[0m                       [01;36mtsc[0m                         [01;36mxzdec[0m
-[01;36mbzdiff[0m    [01;36mdbus-monitor[0m          [01;36mgo[0m                                  [01;36mkubeconform[0m    [01;36mlzless[0m    [01;36mpip3.14[0m           [01;36mpython3.14-config[0m                [01;36mtset[0m                        [01;36mxzdiff[0m
-[01;36mbzegrep[0m   [01;36mdbus-run-session[0m      [01;36mgofmt[0m                               [01;36mkubectl-ctx[0m    [01;36mlzma[0m      [01;36mpkgdata[0m           [01;36mpython3-config[0m                   [01;36mtypescript-language-server[0m  [01;36mxzegrep[0m
-[01;36mbzfgrep[0m   [01;36mdbus-send[0m             [01;36mgolangci-lint[0m                       [01;36mkubectl-ns[0m     [01;36mlzmadec[0m   [01;36mprotoc[0m            [01;36mpzstd[0m                            [01;36muconv[0m                       [01;36mxzfgrep[0m
-[01;36mbzgrep[0m    [01;36mdbus-test-tool[0m        [01;36mgopls[0m                               [01;36mkubectx[0m        [01;36mlzmainfo[0m  [01;36mprotoc-36.2.0[0m     [01;36mreset[0m                            [01;36munlz4[0m                       [01;36mxzgrep[0m
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hw[32mw[39m[32mw[39m[90mhich brew[39m[9D[32mw[32mh[39m[1m[31mw[1m[31mh[0m[39m[1m[31mw[1m[31mh[1m[31mi[0m[39m[1m[31mi[1m[31mc[0m[39m[1m[31mc[1m[31mh[0m[39m[0m[32mw[0m[32mh[0m[32mi[0m[32mc[0m[32mh[39m[32mh[32m [39m[32mh[39m[39m [39mh[39m [39m [39m elm[?1l>[?2004l
-]2;alias | /usr/bin/which --tty-only --read-alias --show-tilde --show-dot helm\kwhich\/snap/bin/helm
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hwhich helm[10D[32mw[32mh[32mi[32mc[32mh[39m[5C[10D[32ml[32ms[32m [32m/[32mh[39mome/linuxbrew/.linuxbrew/bin[33D[32ml[32ms[39m[39m [39m[4m/[39m[4mh[4mo[4mm[4me[4m/[4ml[4mi[4mn[4mu[4mx[4mb[4mr[4me[4mw[4m/[4m.[4ml[4mi[4mn[4mu[4mx[4mb[4mr[4me[4mw[4m/[4mb[4mi[4mn[24m[4mn[4mp[24m[31D[24m/[24mh[24mo[24mm[24me[24m/[24ml[24mi[24mn[24mu[24mx[24mb[24mr[24me[24mw[24m/[24m.[24ml[24mi[24mn[24mu[24mx[24mb[24mr[24me[24mw[24m/[24mb[24mi[24mn[24mp[?2004l
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hp[1m[31mp[0m[39m[1m[31mp[0m[39m[90modman run dockerinaction/hello_world[39m[36D[1m[31mp[1m[31mr[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [35D[0m[32mp[0m[32mr[39m[90mek run -a[39m[9D[32mp[32mr[32mo[39m[39m [39m [39m [39m [39m [39m [39m [39m [8D[1m[31mp[1m[31mr[1m[31mo[0m[39m[1m[31mo[1m[31mt[0m[39m[1m[31mt[1m[31mo[0m[39m[1m[31mo[1m[31mc[0m[39m[0m[32mp[0m[32mr[0m[32mo[0m[32mt[0m[32mo[0m[32mc[39m[?1l>[?2004l
-]2;protoc\kprotoc\Usage: protoc [OPTION] PROTO_FILES
-Parse PROTO_FILES and generate output based on the options given:
-  -IPATH, --proto_path=PATH   Specify the directory in which to search for
-                              imports.  May be specified multiple times;
-                              directories will be searched in order.  If not
-                              given, the current working directory is used.
-                              If not found in any of the these directories,
-                              the --descriptor_set_in descriptors will be
-                              checked for required proto file.
-  --version                   Show version info and exit.
-  -h, --help                  Show this text and exit.
-  --encode=MESSAGE_TYPE       Read a text-format message of the given type
-                              from standard input and write it in binary
-                              to standard output.  The message type must
-                              be defined in PROTO_FILES or their imports.
-  --deterministic_output      When using --encode, ensure map fields are
-                              deterministically ordered. Note that this order
-                              is not canonical, and changes across builds or
-                              releases of protoc.
-  --unsafe_allow_out_dir_escape
-                              Allow output files to use ".." to escape the
-                              output directory. Use with caution.
-  --decode=MESSAGE_TYPE       Read a binary message of the given type from
-                              standard input and write it in text format
-                              to standard output.  The message type must
-                              be defined in PROTO_FILES or their imports.
-  --decode_raw                Read an arbitrary protocol message from
-                              standard input and write the raw tag/value
-                              pairs in text format to standard output.  No
-                              PROTO_FILES should be given when using this
-                              flag.
-  --descriptor_set_in=FILES   Specifies a delimited list of FILES
-                              each containing a FileDescriptorSet (a
-                              protocol buffer defined in descriptor.proto).
-                              The FileDescriptor for each of the PROTO_FILES
-                              provided will be loaded from these
-                              FileDescriptorSets. If a FileDescriptor
-                              appears multiple times, the first occurrence
-                              will be used.
-  -oFILE,                     Writes a FileDescriptorSet (a protocol buffer,
-    --descriptor_set_out=FILE defined in descriptor.proto) containing all of
-                              the input files to FILE.
-  --include_imports           When using --descriptor_set_out, also include
-                              all dependencies of the input files in the
-                              set, so that the set is self-contained.
-  --include_source_info       When using --descriptor_set_out, do not strip
-                              SourceCodeInfo from the FileDescriptorProto.
-                              This results in vastly larger descriptors that
-                              include information about the original
-                              location of each decl in the source file as
-                              well as surrounding comments.
-  --retain_options            When using --descriptor_set_out, do not strip
-                              any options from the FileDescriptorProto.
-                              This results in potentially larger descriptors
-                              that include information about options that were
-                              only meant to be useful during compilation.
-  --dependency_out=FILE       Write a dependency output file in the format
-                              expected by make. This writes the transitive
-                              set of input file paths to FILE
-  --error_format=FORMAT       Set the format in which to print errors.
-                              FORMAT may be 'gcc' (the default) or 'msvs'
-                              (Microsoft Visual Studio format).
-  --fatal_warnings            Make warnings be fatal (similar to -Werr in
-                              gcc). This flag will make protoc return
-                              with a non-zero exit code if any warnings
-                              are generated.
-  --print_free_field_numbers  Print the free field numbers of the messages
-                              defined in the given proto files. Extension ranges
-                              are counted as occupied fields numbers.
-  --enable_codegen_trace      Enables tracing which parts of protoc are
-                              responsible for what codegen output. Not supported
-                              by all backends or on all platforms.
-  --direct_dependencies       A colon delimited list of imports that are
-                              allowed to be used in "import"
-                              declarations, when explictily provided.
-  --option_dependencies       A colon delimited list of imports that are
-                              allowed to be used in "import option"
-                              declarations, when explicitly provided.
-  --notices                   Show notice file and exit.
-  --plugin=EXECUTABLE         Specifies a plugin executable to use.
-                              Normally, protoc searches the PATH for
-                              plugins, but you may specify additional
-                              executables not in the path using this flag.
-                              Additionally, EXECUTABLE may be of the form
-                              NAME=PATH, in which case the given plugin name
-                              is mapped to the given executable even if
-                              the executable's own name differs.
-  --<lang>_prefix=COMMAND     Runs the plugin used by --<lang>_out via
-                              COMMAND. protoc executes "COMMAND <plugin>"
-                              instead of invoking the plugin binary directly.
-                              COMMAND's first token is resolved via the
-                              search path (PATH). The value is split into
-                              argv tokens on whitespace; quotes are not
-                              supported. Use a wrapper script for more
-                              complex invocations.
-  --cpp_out=OUT_DIR           Generate C++ header and source.
-  --csharp_out=OUT_DIR        Generate C# source file.
-  --java_out=OUT_DIR          Generate Java source file.
-  --kotlin_out=OUT_DIR        Generate Kotlin file.
-  --objc_out=OUT_DIR          Generate Objective-C header and source.
-  --php_out=OUT_DIR           Generate PHP source file.
-  --pyi_out=OUT_DIR           Generate python pyi stub.
-  --python_out=OUT_DIR        Generate Python source file.
-  --rbs_out=OUT_DIR           Generate RBS type definition.
-  --ruby_out=OUT_DIR          Generate Ruby source file.
-  --rust_out=OUT_DIR          Generate Rust sources.
-  @<filename>                 Read options and filenames from file. If a
-                              relative file path is specified, the file
-                              will be searched in the working directory.
-                              The --proto_path option will not affect how
-                              this argument file is searched. Content of
-                              the file will be expanded in the position of
-                              @<filename> as in the argument list. Note
-                              that shell expansion is not applied to the
-                              content of the file (i.e., you cannot use
-                              quotes, wildcards, escapes, commands, etc.).
-                              Each line corresponds to a single argument,
-                              even if it contains spaces.
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hprotoc[32mp[32mr[32mo[32mt[32mo[32mc[39m[39mw[32mp[32mr[32mo[32mt[32mo[32mc[39m[1m[31mw[1m[31mp[1m[31mr[1m[31mo[1m[31mt[1m[31mo[1m[31mc[0m[39m[1m[31mw[1m[31mh[1m[31mp[1m[31mr[1m[31mo[1m[31mt[1m[31mo[1m[31mc[0m[39m[1m[31mi[1m[31mp[1m[31mr[1m[31mo[1m[31mt[1m[31mo[1m[31mc[0m[39m[1m[31mc[1m[31mp[1m[31mr[1m[31mo[1m[31mt[1m[31mo[1m[31mc[0m[39m[1m[31mh[1m[31mp[1m[31mr[1m[31mo[1m[31mt[1m[31mo[1m[31mc[0m[39m[1m[31m [1m[31mp[1m[31mr[1m[31mo[1m[31mt[1m[31mo[1m[31mc[0m[39m[0m[32mw[0m[32mh[0m[32mi[0m[32mc[0m[32mh[39m[0m[39m [0m[39mp[0m[39mr[0m[39mo[0m[39mt[0m[39mo[0m[39mc[?1l>[?2004l
-]2;alias | /usr/bin/which --tty-only --read-alias --show-tilde --show-dot protoc\kwhich\/home/linuxbrew/.linuxbrew/bin/protoc
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hwhich protoc[12D[32mw[32mh[32mi[32mc[32mh[39m[7C[12D[32mp[32mr[32mo[32mt[32mo[39mc      [32mo[32mc[39m[32mw[32mh[32mi[32mc[32mh[32m [39mhelm[32mh[39m[39m [4C[10D[32ml[32ms[32m [32m/[32mh[39mome/linuxbrew/.linuxbrew/bin[33D[32ml[32ms[39m[39m [39m[4m/[39m[4mh[4mo[4mm[4me[4m/[4ml[4mi[4mn[4mu[4mx[4mb[4mr[4me[4mw[4m/[4m.[4ml[4mi[4mn[4mu[4mx[4mb[4mr[4me[4mw[4m/[4mb[4mi[4mn[24m[?1l>[?2004l
-]2;ls --color=tty /home/linuxbrew/.linuxbrew/bin\kls\[0m[01;36madaparse[0m  [01;36mbzip2[0m                 [01;36mdbus-update-activation-environment[0m  [01;36mhelm-docs[0m      [01;36mkubens[0m    [01;36mlzmore[0m            [01;36mprotoc-gen-upb[0m                   [01;36msqlc[0m                        [01;36munlzma[0m     [01;36mxzless[0m
-[01;36madig[0m      [01;36mbzip2recover[0m          [01;36mdbus-uuidgen[0m                        [01;36micu-config[0m     [01;36mlz4[0m       [01;36mmakeconv[0m          [01;36mprotoc-gen-upb-36.2.0[0m            [01;36msqlite3[0m                     [01;36munxz[0m       [01;36mxzmore[0m
-[01;36mahost[0m     [01;36mbzless[0m                [01;36mderb[0m                                [01;36micuexportdata[0m  [01;36mlz4c[0m      [01;36mncurses6-config[0m   [01;36mprotoc-gen-upbdefs[0m               [01;36mstarship[0m                    [01;36munzstd[0m     [01;36mzstd[0m
-[01;36margocd[0m    [01;36mbzmore[0m                [01;36mfastbase64[0m                          [01;36micuinfo[0m        [01;36mlz4cat[0m    [01;36mncursesw6-config[0m  [01;36mprotoc-gen-upbdefs-36.2.0[0m        [01;36msutf[0m                        [01;36mwheel3[0m     [01;36mzstdcat[0m
-[01;36masdf[0m      [01;36mcaptoinfo[0m             [01;36mfastbase64.coreutils[0m                [01;36midle3[0m          [01;36mlzcat[0m     [01;36mnode[0m              [01;36mprotoc-gen-upb_minitable[0m         [01;36msutf-benchmark[0m              [01;36mwheel3.14[0m  [01;36mzstdgrep[0m
-[01;36mbrew[0m      [01;36mclear[0m                 [01;36mgenbrk[0m                              [01;36midle3.14[0m       [01;36mlzcmp[0m     [01;36mnpm[0m               [01;36mprotoc-gen-upb_minitable-36.2.0[0m  [01;36mtabs[0m                        [01;36mxmlwf[0m      [01;36mzstdless[0m
-[01;36mbrotli[0m    [01;36mc_rehash[0m              [01;36mgencfu[0m                              [01;36minfocmp[0m        [01;36mlzdiff[0m    [01;36mnpx[0m               [01;36mpydoc3[0m                           [01;36mtic[0m                         [01;36mxz[0m         [01;36mzstdmt[0m
-[01;36mbunzip2[0m   [01;36mdbus-cleanup-sockets[0m  [01;36mgencnval[0m                            [01;36minfotocap[0m      [01;36mlzegrep[0m   [01;36mopenssl[0m           [01;36mpydoc3.14[0m                        [01;36mtoe[0m                         [01;36mxzcat[0m
-[01;36mbzcat[0m     [01;36mdbus-daemon[0m           [01;36mgendict[0m                             [01;36mkind[0m           [01;36mlzfgrep[0m   [01;36mperlnavigator[0m     [01;36mpython3[0m                          [01;36mtput[0m                        [01;36mxzcmp[0m
-[01;36mbzcmp[0m     [01;36mdbus-launch[0m           [01;36mgenrb[0m                               [01;36mkubecfg[0m        [01;36mlzgrep[0m    [01;36mpip3[0m              [01;36mpython3.14[0m                       [01;36mtsc[0m                         [01;36mxzdec[0m
-[01;36mbzdiff[0m    [01;36mdbus-monitor[0m          [01;36mgo[0m                                  [01;36mkubeconform[0m    [01;36mlzless[0m    [01;36mpip3.14[0m           [01;36mpython3.14-config[0m                [01;36mtset[0m                        [01;36mxzdiff[0m
-[01;36mbzegrep[0m   [01;36mdbus-run-session[0m      [01;36mgofmt[0m                               [01;36mkubectl-ctx[0m    [01;36mlzma[0m      [01;36mpkgdata[0m           [01;36mpython3-config[0m                   [01;36mtypescript-language-server[0m  [01;36mxzegrep[0m
-[01;36mbzfgrep[0m   [01;36mdbus-send[0m             [01;36mgolangci-lint[0m                       [01;36mkubectl-ns[0m     [01;36mlzmadec[0m   [01;36mprotoc[0m            [01;36mpzstd[0m                            [01;36muconv[0m                       [01;36mxzfgrep[0m
-[01;36mbzgrep[0m    [01;36mdbus-test-tool[0m        [01;36mgopls[0m                               [01;36mkubectx[0m        [01;36mlzmainfo[0m  [01;36mprotoc-36.2.0[0m     [01;36mreset[0m                            [01;36munlz4[0m                       [01;36mxzgrep[0m
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hw[32mw[39m[32mw[39m[90mhich protoc[39m[11D[32mw[32mh[39m[1m[31mw[1m[31mh[0m[39m[1m[31mw[1m[31mh[1m[31mx[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [9D[1m[31mx[1m[31mh[0m[39m[1m[31mx[0m[39m[0m[39m [1m[31mw[1m[31mh[0m[39m[0m[39m [90mich protoc[39m[10D[1m[31mw[1m[31mh[1m[31mi[0m[39m[1m[31mi[1m[31mc[0m[39m[1m[31mc[1m[31mh[0m[39m[0m[32mw[0m[32mh[0m[32mi[0m[32mc[0m[32mh[39m[32mh[32m [39m[32mh[39m[39m [39mz[39m [39m [39m [39m [39m uban[?1l>[?2004l
-]2;alias | /usr/bin/which --tty-only --read-alias --show-tilde --show-dot zuban\kwhich\~/.emacs.d/mason/bin/zuban
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hp[1m[31mp[0m[39m[1m[31mp[0m[39m[90mrotoc[39m[1m[31mp[1m[31mi[0m[39m[39m [39m [39m [39m [90mpx install ignr[39m[15D[1m[31mp[1m[31mi[1m[31mx[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [14D[1m[31mx[1m[31mp[0m[39m[1m[31mp[1m[31m [0m[39m[1m[31mp[0m[39m[0m[39m liust     [1m[31mx[0m[39m[0m[39m [1m[31mp[1m[31mi[0m[39m[0m[39m [90mpx install ignr[39m[15D[1m[31mp[1m[31mi[1m[31mp[0m[39m[0m[32mp[0m[32mi[0m[32mp[39m[32mp[32mx[39m[32mx[32m [39m[32mx[39m[39m [39ml[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[90mist | awk '/- / {print $2}' | xargs pipx reinstall --backend pip[39m[64D[39mi[39ms[39mt[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [61D[?1l>[?2004l
-]2;pipx list\kpipx\[?25lvenvs are in [1m/home/familia/.local/share/pipx/venvs[0m
-apps are exposed on your $PATH at [1m/home/familia/.local/bin[0m
-manual pages are exposed at [1m/home/familia/.local/share/man[0m
-   package [1mharlequin[0m [1m2.16.1[0m, installed using Python 3.12.14
-    - harlequin
-    - hsql
-   package [1mignr[0m [1m2.3[0m, installed using Python 3.12.15
-    - ignr
-   package [1mpoetry[0m [1m2.5.1[0m, installed using Python 3.12.14
-    - poetry
-   package [1mprek[0m [1m0.5.5[0m, installed using Python 3.12.14
-    - prek
-   package [1mrassumfrassum[0m [1m0.3.5[0m, installed using Python 3.12.14
-    - rass
-   package [1mtoolong[0m [1m1.5.0[0m, installed using Python 3.12.14
-    - tl
-[?25h[0m[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hw[32mw[39m[32mw[39m[90mhich zuban[39m[10D[32mw[32mh[39m[1m[31mw[1m[31mh[0m[39m[1m[31mw[1m[31mh[1m[31mi[0m[39m[1m[31mi[1m[31mh[0m[39m[39m [39m [39m [39m [39m [39m [39m [1m[31mi[0m[39m[0m[39m [90mch zuban[39m[8D[1m[31mi[1m[31mc[0m[39m[1m[31mc[1m[31mh[0m[39m[0m[32mw[0m[32mh[0m[32mi[0m[32mc[0m[32mh[39m[32mh[32m [39m[32mh[39m[39m [39mi[39m [39m [39m [39m gnr[?1l>[?2004l
-]2;alias | /usr/bin/which --tty-only --read-alias --show-tilde --show-dot ignr\kwhich\~/.local/bin/ignr
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hw[32mw[39m[32mw[39m[90mhich ignr[39m[9D[32mw[32mh[39m[1m[31mw[1m[31mh[0m[39m[1m[31mw[1m[31mh[1m[31mi[0m[39m[1m[31mi[1m[31mc[0m[39m[1m[31mc[1m[31mh[0m[39m[0m[32mw[0m[32mh[0m[32mi[0m[32mc[0m[32mh[39m[32mc[39m[39m [39m [39m [39m [39m [39m [1m[31mw[1m[31mh[1m[31mi[1m[31mc[0m[39m[90mh ignr[39m[1m[31mi[0m[39m[0m[39m [39m [39m [39m [39m [39m [39m [90mch ignr[39m[1m[31mw[1m[31mh[0m[39m[0m[39m [39m [39m [39m [39m [39m [39m [39m [8D[90mich ignr[39m[8D[1m[31mw[0m[39m[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [9D[0m[32mw[39m[32mw[39m[90mhich ignr[39m[9D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [10Dr[32mr[39m[32mr[39m[90mg -n ".*allowTags.*-staging" --type yaml[39m[40D[32mr[32mg[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39D[?1l>[?2004l
-]2;rg\krg\rg: ripgrep requires at least one pattern to execute a search
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;230;126;128m➜ [0m  [K[?1h=[?2004hw[32mw[39m[32mw[39m[90mhich ignr[39m[9D[32mw[32mh[39m[1m[31mw[1m[31mh[0m[39m[1m[31mw[1m[31mh[1m[31mi[0m[39m[1m[31mi[1m[31mx[0m[39m[39m [39m [39m [39m [39m [39m [1m[31mx[1m[31mh[0m[39m[1m[31mx[0m[39m[0m[39m [1m[31mi[0m[39m[0m[39m [90mch ignr[39m[1m[31mi[1m[31mc[0m[39m[1m[31mc[1m[31mh[0m[39m[0m[32mw[0m[32mh[0m[32mi[0m[32mc[0m[32mh[39m[32mh[32m [39m[32mh[39m[39m [39mr[39m [39m [39m [90mg[39m[39mg[?1l>[?2004l
-]2;alias | /usr/bin/which --tty-only --read-alias --show-tilde --show-dot rg\kwhich\/usr/bin/rg
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hw[32mw[39m[32mw[39m[90mhich rg[39m[32mw[32mh[39m[1m[31mw[1m[31mh[0m[39m[1m[31mw[1m[31mh[1m[31mi[0m[39m[1m[31mi[1m[31mc[0m[39m[1m[31mc[1m[31mh[0m[39m[0m[32mw[0m[32mh[0m[32mi[0m[32mc[0m[32mh[39m[32mh[32m [39m[32mh[39m[39m [39mk[39m [90mubectl[39m[39m3[39m [39m [39m [39m [39m d[?1l>[?2004l
-]2;alias | /usr/bin/which --tty-only --read-alias --show-tilde --show-dot k3d\kwhich\/usr/local/bin/k3d
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004h[H[J[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [Kwhich k3d[9D[32mw[32mh[32mi[32mc[32mh[39m[4Crg [8D[32mr[32mg[39m[39m [39m [39m    [32mw[32mh[39mich ignr[10D[32mw[32mh[32mi[32mc[32mh[39m[5C[10D[32mp[32mi[32mp[32mx[32m [39mlist [32mx[39m[39m [4C[9D[32mw[32mh[32mi[32mc[39mh zuban[8D[32mc[32mh[39m[6C[11D[32ml[32ms[32m [32m/[32mh[39mome/linuxbrew/.linuxbrew/bin[33D[32ml[32ms[39m[39m [39m[4m/[39m[4mh[4mo[4mm[4me[4m/[4ml[4mi[4mn[4mu[4mx[4mb[4mr[4me[4mw[4m/[4m.[4ml[4mi[4mn[4mu[4mx[4mb[4mr[4me[4mw[4m/[4mb[4mi[4mn[24m[33D[32mw[32mh[39mi[4mc[4mh[4m [4mz[4mu[4mb[4ma[4mn[24m[24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [22D[11D[32mw[32mh[32mi[24m[32mc[24m[32mh[39m[24m [24mz[24mu[24mb[24ma[24mn[11D[32mp[32mi[32mp[32mx[32m [39mlist  [32mx[39m[39m [4C[9D[32mw[32mh[32mi[32mc[39mh ignr[32mc[32mh[39m[5C[10D[32mr[32mg[39m[39m [39m [39m      [8D[32mw[32mh[39mich rg[8D[32mw[32mh[32mi[32mc[32mh[39m[3Ck3d[9D[39m [39m [39m [39m [39m     [9Dwhich k3d[9D[32mw[32mh[32mi[32mc[32mh[39m[4Crg [8D[32mr[32mg[39m[39m [39m [39m    [32mw[32mh[39mich ignr[10D[32mw[32mh[32mi[32mc[32mh[39m[5C[10D[32mp[32mi[32mp[32mx[32m [39mlist [32mx[39m[39m [4C[9D[32mw[32mh[32mi[32mc[39mh zuban[8D[32mc[32mh[39m[6C[11D[32ml[32ms[32m [32m/[32mh[39mome/linuxbrew/.linuxbrew/bin[33D[32ml[32ms[39m[39m [39m[4m/[39m[4mh[4mo[4mm[4me[4m/[4ml[4mi[4mn[4mu[4mx[4mb[4mr[4me[4mw[4m/[4m.[4ml[4mi[4mn[4mu[4mx[4mb[4mr[4me[4mw[4m/[4mb[4mi[4mn[24m[33D[32mw[32mh[39mi[4mc[4mh[4m [4mp[4mr[4mo[4mt[4mo[4mc[24m[24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [21D[12D[32mw[32mh[32mi[24m[32mc[24m[32mh[39m[24m [24mp[24mr[24mo[24mt[24mo[24mc[12D[32mp[32mr[32mo[32mt[32mo[39mc      [32mo[32mc[39m[32mw[32mh[32mi[32mc[32mh[32m [39mhelm[32mh[39m[39m [4C[10D[32ml[32ms[32m [32m/[32mh[39mome/linuxbrew/.linuxbrew/bin[33D[32ml[32ms[39m[39m [39m[4m/[39m[4mh[4mo[4mm[4me[4m/[4ml[4mi[4mn[4mu[4mx[4mb[4mr[4me[4mw[4m/[4m.[4ml[4mi[4mn[4mu[4mx[4mb[4mr[4me[4mw[4m/[4mb[4mi[4mn[24m[33D[32mw[32mh[39mi[4mc[4mh[4m [4mb[4mr[4me[4mw[24m[24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [23D[10D[32mw[32mh[32mi[24m[32mc[24m[32mh[39m[24m [24mb[24mr[24me[24mw[10D[32ml[32ms[32m [32m/[32mh[39mome/linuxbrew/.linuxbrew/bin[33D[32ml[32ms[39m[39m [39m[4m/[39m[4mh[4mo[4mm[4me[4m/[4ml[4mi[4mn[4mu[4mx[4mb[4mr[4me[4mw[4m/[4m.[4ml[4mi[4mn[4mu[4mx[4mb[4mr[4me[4mw[4m/[4mb[4mi[4mn[24m[33D[32mw[32mh[39mi[4mc[4mh[4m [4mk[4mu[4mb[4me[4mc[4mt[4ml[24m[24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [20D[13D[32mw[32mh[32mi[24m[32mc[24m[32mh[39m[24m [24mk[24mu[24mb[24me[24mc[24mt[24mlx[13D[32ma[32mw[32mk[32m [32m-[39mf scripts/installation-commands.awk config/deps[50D[32mk[39m[39m [39m-[2C[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[52D[32mc[32ml[32me[39mar  [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m  [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [47D[32me[32ma[32mr[39m[32ma[32mw[32mk[32m [32m-[39mf scripts/installation-commands.awk config/deps[50D[32mk[39m[39m [39m-[2C[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[52D[32ml[32ms[39m[39m     [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m  [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [50D[32ma[32mw[39mk -f scripts/installation-commands.awk config/deps[52D[32ma[32mw[32mk[39m[4C[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[52D[32mc[32ml[32me[39mar  [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m  [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [47D[32me[32ma[32mr[39m[32ma[32mw[32mk[32m [32m-[39mf scripts/installation-commands.awk config/deps[50D[32mk[39m[39m [39m-[2C[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[?1l>[?2004l
-]2;awk -f scripts/installation-commands.awk config/deps\kawk\apt update
-apt install -y  linux-image-amd64 grub-pc grub-efi-amd64-signed systemd-sysv sway waybar kitty zsh podman grim slurp wireplumber pipewire-audio network-manager blueman cliphist sway-notification-center lightdm tmux htop papers mupdf incus swayimg celluloid mpv thunar extrepo snapd k3d
-
-extrepo enable librewolf
-extrepo update librewolf
-apt update
-apt install -y  librewolf
-
-snap install  thunderbird
-
- NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" -- --path /opt/brew
-brew install  asdf argocd golangci-lint gopls kind
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hawk -f scripts/installation-commands.awk config/deps[52D[32ma[32mw[32mk[39m[4C[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[?1l>[?2004l
-]2;awk -f scripts/installation-commands.awk config/deps\kawk\apt update
-apt install -y  linux-image-amd64 grub-pc grub-efi-amd64-signed systemd-sysv sway waybar kitty zsh podman grim slurp wireplumber pipewire-audio network-manager blueman cliphist sway-notification-center lightdm tmux htop papers mupdf incus swayimg celluloid mpv thunar extrepo snapd k3d
-
-extrepo enable librewolf
-extrepo update librewolf
-apt update
-apt install -y  librewolf
-
-snap install  thunderbird
-
- NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" -- --path /opt/linuxbrew
-brew install  asdf argocd golangci-lint gopls kind
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004ha[1m[31ma[0m[39m[1m[31ma[0m[39m[90mwk -f scripts/installation-commands.awk config/deps[39m[51D[1m[31ma[1m[31mp[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [50D[1m[31ma[1m[31mp[1m[31mt[0m[39m[1m[31mt[1m[31m [0m[39m[1m[31mt[0m[39m[0m[39m [1m[31ma[1m[31mp[0m[39m[0m[39m [1m[31ma[0m[39m[0m[39m [1m[31ma[0m[39m[90mwk -f scripts/installation-commands.awk config/deps[39m[51D[0m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [52Dawk -f scripts/installation-commands.awk config/deps[52D[32ma[32mw[32mk[39m[4C[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[?1l>[?2004l
-]2;awk -f scripts/installation-commands.awk config/deps\kawk\apt update
-apt install -y  linux-image-amd64 grub-pc grub-efi-amd64-signed systemd-sysv sway waybar kitty zsh podman grim slurp wireplumber pipewire-audio network-manager blueman cliphist sway-notification-center lightdm tmux htop papers mupdf incus swayimg celluloid mpv thunar extrepo snapd
-
-extrepo enable librewolf
-extrepo update librewolf
-apt update
-apt install -y  librewolf
-
-snap install  thunderbird
-
- NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" -- --path /opt/linuxbrew
-brew install  asdf argocd golangci-lint gopls kind
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004h-[32m-[39m[39m s[4ms[24m[4ms[24m[90mcript[39m[4ms[39m[4mu[24m[39m [39m [39m [39m [24m[32ms[24m[32mu[39m[90mdo dnf install mpv[39m[18D[32ms[32mu[32md[39m[1m[31ms[1m[31mu[1m[31md[0m[39m[1m[31md[1m[31mi[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [16D[1m[31md[0m[39m[0m[39m [90mo dnf install mpv[39m[17D[1m[31md[1m[31mo[0m[39m[0m[4m[32ms[0m[4m[32mu[0m[4m[32md[0m[4m[32mo[24m[39m[4m[32mo[4m[32m [24m[39m[4m[32mo[24m[39m[24m[39m [39ms[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [14D[4ms[24m[90mystemctl start sddm[39m[19D[4ms[39m[4mu[24m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [18D[24m[32ms[24m[32mu[39m[?1l>[?2004l
-]2;sudo su\ksu\[sudo] password for familia: 
-[?2004h[32mroot@familia[0m:[32m/home/familia/Documents/Projects/heroana-os[0m#[0m brew
-[?2004lbash: brew: command not found...
-^C
-[?2004h[32mroot@familia[0m:[32m/home/familia/Documents/Projects/heroana-os[0m#[0m /home/LIN[K[K[Klinuxbrew/.linuxbrew/br[Kin/B¡[K[Kbrew update
-[?2004l[31mError:[0m Running Homebrew as root is extremely dangerous and no longer supported.
-As Homebrew does not drop privileges on installation you would be giving all
-build scripts full access to your system.
-[?2004h[32mroot@familia[0m:[32m/home/familia/Documents/Projects/heroana-os[0m#[0m exit
-[?2004lexit
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;230;126;128m➜ [0m  [K[?1h=[?2004hb[1m[31mb[0m[39m[1m[31mb[0m[39m[90mluetoothctl [39m[12D[1m[31mb[1m[31mr[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [11D[90mew upgrade[39m[10D[1m[31mb[1m[31mr[1m[31me[0m[39m[1m[31me[1m[31mw[0m[39m[0m[32mb[0m[32mr[0m[32me[0m[32mw[39m[32mw[32m [39m[32mw[39m[39m [39mu[39mp[39md[39m [39m [39m [39m [90mate[39m[39ma[39mt[39me[?1l>[?2004l
-]2;brew update\kbrew\[34m==>[0m [1mUpdating Homebrew...[0m
-Updated 2 taps (homebrew/core and homebrew/cask).
-[34m==>[0m [1mNew Formulae[0m
-dnswire: Library for encoding/decoding different DNS encapsulations
-openssl@3.6: Cryptography and SSL/TLS Toolkit
-planetiler: Flexible tool to build planet-scale vector tilesets from OpenStreetMap data fast
-portop: Terminal UI showing which processes are using TCP and UDP ports
-tinyframe: Minimalistic library for reading and writing the Frame Streams protocol
-titus: High-performance secrets scanner
-[34m==>[0m [1mOutdated Formulae[0m
-ada-url                           golangci-lint                     kubecfg                           node                              simdjson                          starship
-argocd                            gopls                             libngtcp2                         openssl@3                         simdutf                           typescript-language-server
-go                                hdrhistogram_c                    merve                             python@3.14                       sqlite
-
-You have [1m17[0m outdated formulae installed.
-You can upgrade them with [1mbrew upgrade[0m
-or list them with [1mbrew outdated[0m.
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hm[1m[31mm[0m[39m[1m[31mm[0m[39m[90mpv /home/familia/Downloads/20260402_033931.mp4[39m[46D[1m[31mm[1m[31ma[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [45D[90mke test 2>1 | awk '/Summary/'[39m[29D[1m[31mm[1m[31ma[1m[31mn[0m[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [28D[0m[32mm[0m[32ma[0m[32mn[39m[90m xdg-desktop-portal-wlr[39m[23D[32mn[32m [39m[32mn[39m[39m [39mc[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [21D[4mc[24m[4mc[4mh[24m[24mc[24mhroot[?1l>[?2004l
-]2;man chroot\kman\[?1049h[47;1H[?1h=[4mCHROOT[24m(1)                                                                                     User Commands                                                                                     [4mCHROOT[24m(1)[m
-[m
-[1mNAME[0m[m
-       chroot - run command or interactive shell with special root directory[m
-[m
-[1mSYNOPSIS[0m[m
-       [1mchroot [22m[[4mOPTION[24m] [4mNEWROOT[24m [[4mCOMMAND[24m [[4mARG[24m]...][m
-       [1mchroot [4m[22mOPTION[0m[m
-[m
-[1mDESCRIPTION[0m[m
-       Run COMMAND with root directory set to NEWROOT.[m
-[m
-       [1m--groups[22m=[4mG_LIST[0m[m
-              specify supplementary groups as g1,g2,..,gN[m
-[m
-       [1m--userspec[22m=[4mUSER[24m:GROUP[m
-              specify user and group (ID or name) to use[m
-[m
-       [1m--skip-chdir[0m[m
-              do not change working directory to '/'[m
-[m
-       [1m--help [22mdisplay this help and exit[m
-[m
-       [1m--version[0m[m
-              output version information and exit[m
-[m
-       If no command is given, run '"$SHELL" [1m-i[22m' (default: '/bin/sh [1m-i[22m').[m
-[m
-   [1mExit status:[0m[m
-       125    if the chroot command itself fails[m
-[m
-       126    if COMMAND is found but cannot be invoked[m
-[m
-       127    if COMMAND cannot be found[m
-[m
-       -      the exit status of COMMAND otherwise[m
-[m
-[1mAUTHOR[0m[m
-       Written by Roland McGrath.[m
-[m
-[1mREPORTING BUGS[0m[m
-       GNU coreutils online help: <https://www.gnu.org/software/coreutils/>[m
-       Report any translation bugs to <https://translationproject.org/team/>[m
-[m
-[1mCOPYRIGHT[0m[m
-       Copyright © 2024 Free Software Foundation, Inc.  License GPLv3+: GNU GPL version 3 or later <https://gnu.org/licenses/gpl.html>.[m
-[7m Manual page chroot(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049l[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004h[H[J[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [Kl[32ml[39m[32ml[39m[90ms /home/linuxbrew/.linuxbrew/bin[39m[32D[32ml[32ms[39m[32ml[32ms[32ma[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [30D[32ma[32m [39m[32ma[39m[39m [32ml[32ms[39m[39m [90m /home/linuxbrew/.linuxbrew/bin[39m[31D[32ml[32ms[32m [39m[32ml[32ms[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [31D[90m /home/linuxbrew/.linuxbrew/bin[39m[31D[32ml[39m[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [32D[32ml[39m[90ms /home/linuxbrew/.linuxbrew/bin[39m[32D[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [33Dman chroot[10D[32mm[32ma[32mn[39m[7C[10D[32mb[32mr[32me[39mw update[9D[32me[32mw[39m[7C[11D[32ms[32mu[32md[32mo[39m su    [4m[32ms[4m[32mu[4m[32md[4m[32mo[24m[39m [32ms[32mu[39m[4m[32ma[4m[32mw[4m[32mk[4m[32m [24m[39m-[32mf[32m [39mscripts/installation-commands.awk config/deps[52D[24m[32ma[24m[32mw[24m[32mk[39m[24m[39m -[39mf[39m [4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[52D[32mw[32mh[32mi[39mch k[4m3[4md[24m[24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m  [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [24m [43D[32mi[32mc[32mh[39m[2C[24m3[24md[9D[32ma[32mw[32mk[32m [32m-[39mf scripts/installation-commands.awk config/deps[50D[32mk[39m[39m [39m-[2C[4ms[4mc[4mr[4mi[4mp[4mt[4ms[4m/[4mi[4mn[4ms[4mt[4ma[4ml[4ml[4ma[4mt[4mi[4mo[4mn[4m-[4mc[4mo[4mm[4mm[4ma[4mn[4md[4ms[4m.[4ma[4mw[4mk[24m [4mc[4mo[4mn[4mf[4mi[4mg[4m/[4md[4me[4mp[4ms[24m[?1l>[?2004l
-]2;awk -f scripts/installation-commands.awk config/deps\kawk\apt update
-apt install -y  linux-image-amd64 grub-pc grub-efi-amd64-signed systemd-sysv sway waybar kitty zsh podman grim slurp wireplumber pipewire-audio network-manager blueman cliphist sway-notification-center lightdm tmux htop papers mupdf incus swayimg celluloid mpv thunar extrepo snapd
-
-extrepo enable librewolf
-extrepo update librewolf
-apt update
-apt install -y  librewolf
-
-snap install  thunderbird
-
- NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" -- --path /opt/linuxbrew
-brew install  asdf argocd golangci-lint gopls kind
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004h9[32m9[39m[39m p[1m[31mp[0m[39m[1m[31mp[0m[39m[90mipx list[39m[8D[1m[31mp[1m[31mo[0m[39m[39m [39m [39m [39m [39m [39m [39m [90mdman run dockerinaction/hello_world[39m[35D[1m[31mp[1m[31mo[1m[31md[0m[39m[1m[31md[1m[31mm[0m[39m[1m[31mm[1m[31ma[0m[39m[1m[31ma[1m[31mn[0m[39m[0m[32mp[0m[32mo[0m[32md[0m[32mm[0m[32ma[0m[32mn[39m[32mn[32m [39m[32mn[39m[39m [39mp[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [29D[90ms[39m[39ms[?1l>[?2004l
-]2;podman ps\kpodman\CONTAINER ID  IMAGE       COMMAND     CREATED     STATUS      PORTS       NAMES
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004h  docker run --detach \
-         -[K-name web nginx:latestM[29D[7m [7m [7md[7mo[7mc[7mk[7me[7mr[7m [7mr[7mu[7mn[7m [7m-[7m-[7md[7me[7mt[7ma[7mc[7mh[7m [7m\[1B[27m[7m [7m [7m [7m [7m [7m [7m [7m [7m [7m-[7m-[7mn[7ma[7mm[7me[7m [7mw[7me[7mb[7m [7mn[7mg[7mi[7mn[7mx[7m:[7ml[7ma[7mt[7me[7ms[7mt[27m
-[KMM[3C[27m [27m [27md[27mo[27mc[27mk[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27m-[27md[27me[27mt[27ma[27mc[27mh[27m [27m\[1B[27m [27m [27m [27m [27m [27m [27m [27m [27m [27m-[27m-[27mn[27ma[27mm[27me[27m [27mw[27me[27mb[27m [27mn[27mg[27mi[27mn[27mx[27m:[27ml[27ma[27mt[27me[27ms[27mt[1B[KM[26CM[21D[1m[31md[1m[31mo[1m[31mc[1m[31mk[1m[31me[1m[31mr[0m[39m[1B[15CM[7C[2C[7C[1m[31me[0m[39m[P[15C [16D[1m[31mk[0m[39m[P[15C [16D[1m[31mc[0m[39m[P[15C [16D[1m[31mo[0m[39m[P[15C [16D[0m[33md[0m[33mo[39m [1m[31mr[1m[31mu[1m[31mn[0m[39m[33md[39m[P[15C [16D[32md[39m [0m[39mr[0m[39mu[0m[39mn[P[15C [16D[1C[1m[31mr[1m[31mu[1m[31mn[0m[39m[P[14C [16D[P[15C [16Dp[0m[39m [1m[31mr[1m[31mu[1m[31mn[0m[39m --detach \[15D[1m[31mp[0m[39m [0m[39mr[0m[39mu[0m[39mn[1m[31mp[1m[31mo[0m[39m run --detach \[15D[1m[31mp[1m[31mo[1m[31md[0m[39m run --detach \[15D[1m[31md[1m[31mm[0m[39m run --detach \[15D[1m[31mm[1m[31ma[0m[39m run --detach \[15D[1m[31ma[1m[31mn[0m[39m run --detach \[15D[0m[32mp[0m[32mo[0m[32md[0m[32mm[0m[32ma[0m[32mn[39m[?1l>[?2004l[2B
-]2;podman run --detach --name web nginx:latest\kpodman\Resolved "nginx" as an alias (/etc/containers/registries.conf.d/000-shortnames.conf)
-Trying to pull docker.io/library/nginx:latest...
-Getting image source signatures
-Copying blob c9ec797c69ed [--------------------------------------] 0.0b / 1.2KiB
-Copying blob c9ec797c69ed [--------------------------------------] 0.0b / 1.2KiB | 0.0 b/s
-Copying blob ecc510c1e359 [--------------------------------------] 0.0b / 28.5MiB
-Copying blob ecc510c1e359 [--------------------------------------] 0.0b / 28.5MiB | 0.0 b/s
-Copying blob b19352c60515 [--------------------------------------] 0.0b / 627.0b
-Copying blob b19352c60515 [--------------------------------------] 0.0b / 627.0b | 0.0 b/s
-Copying blob 113d9139ada2 [--------------------------------------] 0.0b / 32.5MiB
-Copying blob 113d9139ada2 [--------------------------------------] 0.0b / 32.5MiB | 0.0 b/s
-Copying blob 188e9077f350 [--------------------------------------] 0.0b / 964.0b
-Copying blob 188e9077f350 [--------------------------------------] 0.0b / 964.0b | 0.0 b/s
-Copying blob 792a76c59dbd [--------------------------------------] 0.0b / 405.0b
-Copying blob 792a76c59dbd [--------------------------------------] 0.0b / 405.0b | 0.0 b/s
-[12A[JCopying blob c9ec797c69ed [--------------------------------------] 0.0b / 1.2KiB
-Copying blob c9ec797c69ed done   | 
-Copying blob ecc510c1e359 [--------------------------------------] 0.0b / 28.5MiB
-Copying blob ecc510c1e359 [--------------------------------------] 239.4KiB / 28.5MiB | 3.3 MiB/s
-Copying blob b19352c60515 [--------------------------------------] 0.0b / 627.0b
-Copying blob b19352c60515 [--------------------------------------] 0.0b / 627.0b | 0.0 b/s
-Copying blob 113d9139ada2 [--------------------------------------] 0.0b / 32.5MiB
-Copying blob 113d9139ada2 [--------------------------------------] 0.0b / 32.5MiB | 0.0 b/s
-Copying blob 188e9077f350 [--------------------------------------] 0.0b / 964.0b
-Copying blob 188e9077f350 [--------------------------------------] 0.0b / 964.0b | 0.0 b/s
-Copying blob 792a76c59dbd [--------------------------------------] 0.0b / 405.0b
-Copying blob 792a76c59dbd [--------------------------------------] 0.0b / 405.0b | 0.0 b/s
-Copying blob 6a6757ab48b1 [--------------------------------------] 0.0b / 1.4KiB
-Copying blob 6a6757ab48b1 [--------------------------------------] 0.0b / 1.4KiB | 0.0 b/s
-[14A[JCopying blob c9ec797c69ed done   | 
-Copying blob ecc510c1e359 [=======>------------------------------] 6.1MiB / 28.5MiB | 41.4 MiB/s
-Copying blob b19352c60515 done   | 
-Copying blob 113d9139ada2 [--------------------------------------] 351.4KiB / 32.5MiB | 3.8 MiB/s
-Copying blob 188e9077f350 [--------------------------------------] 0.0b / 964.0b | 0.0 b/s
-Copying blob 792a76c59dbd [--------------------------------------] 0.0b / 405.0b | 0.0 b/s
-Copying blob 6a6757ab48b1 [--------------------------------------] 0.0b / 1.4KiB
-Copying blob 6a6757ab48b1 [--------------------------------------] 0.0b / 1.4KiB | 0.0 b/s
-[8A[JCopying blob c9ec797c69ed done   | 
-Copying blob ecc510c1e359 [==============>-----------------------] 11.2MiB / 28.5MiB | 40.2 MiB/s
-Copying blob b19352c60515 done   | 
-Copying blob 113d9139ada2 [=>------------------------------------] 1.5MiB / 32.5MiB | 9.2 MiB/s
-Copying blob 188e9077f350 [--------------------------------------] 0.0b / 964.0b | 0.0 b/s
-Copying blob 792a76c59dbd [--------------------------------------] 0.0b / 405.0b | 0.0 b/s
-Copying blob 6a6757ab48b1 [--------------------------------------] 0.0b / 1.4KiB | 0.0 b/s
-[7A[JCopying blob c9ec797c69ed done   | 
-Copying blob ecc510c1e359 [====================>-----------------] 15.6MiB / 28.5MiB | 40.1 MiB/s
-Copying blob b19352c60515 done   | 
-Copying blob 113d9139ada2 [===>----------------------------------] 3.0MiB / 32.5MiB | 12.1 MiB/s
-Copying blob 188e9077f350 [--------------------------------------] 0.0b / 964.0b | 0.0 b/s
-Copying blob 792a76c59dbd [--------------------------------------] 0.0b / 405.0b | 0.0 b/s
-Copying blob 6a6757ab48b1 [--------------------------------------] 0.0b / 1.4KiB | 0.0 b/s
-[7A[JCopying blob c9ec797c69ed done   | 
-Copying blob ecc510c1e359 [=========================>------------] 19.4MiB / 28.5MiB | 44.2 MiB/s
-Copying blob b19352c60515 done   | 
-Copying blob 113d9139ada2 [======>-------------------------------] 5.6MiB / 32.5MiB | 19.2 MiB/s
-Copying blob 188e9077f350 [--------------------------------------] 0.0b / 964.0b | 0.0 b/s
-Copying blob 792a76c59dbd [--------------------------------------] 0.0b / 405.0b | 0.0 b/s
-Copying blob 6a6757ab48b1 [--------------------------------------] 0.0b / 1.4KiB | 0.0 b/s
-[7A[JCopying blob c9ec797c69ed done   | 
-Copying blob ecc510c1e359 [=============================>--------] 22.7MiB / 28.5MiB | 29.5 MiB/s
-Copying blob b19352c60515 done   | 
-Copying blob 113d9139ada2 [=========>----------------------------] 8.5MiB / 32.5MiB | 29.2 MiB/s
-Copying blob 188e9077f350 [--------------------------------------] 0.0b / 964.0b | 0.0 b/s
-Copying blob 792a76c59dbd done   | 
-Copying blob 6a6757ab48b1 done   | 
-[7A[JCopying blob c9ec797c69ed done   | 
-Copying blob ecc510c1e359 [==================================>---] 26.0MiB / 28.5MiB | 31.0 MiB/s
-Copying blob b19352c60515 done   | 
-Copying blob 113d9139ada2 [============>-------------------------] 10.9MiB / 32.5MiB | 13.9 MiB/s
-Copying blob 188e9077f350 done   | 
-Copying blob 792a76c59dbd done   | 
-Copying blob 6a6757ab48b1 done   | 
-[7A[JCopying blob c9ec797c69ed done   | 
-Copying blob ecc510c1e359 done   | 
-Copying blob b19352c60515 done   | 
-Copying blob 113d9139ada2 [===============>----------------------] 14.0MiB / 32.5MiB | 21.9 MiB/s
-Copying blob 188e9077f350 done   | 
-Copying blob 792a76c59dbd done   | 
-Copying blob 6a6757ab48b1 done   | 
-[7A[JCopying blob c9ec797c69ed done   | 
-Copying blob ecc510c1e359 done   | 
-Copying blob b19352c60515 done   | 
-Copying blob 113d9139ada2 [=======================>--------------] 20.1MiB / 32.5MiB | 88.9 MiB/s
-Copying blob 188e9077f350 done   | 
-Copying blob 792a76c59dbd done   | 
-Copying blob 6a6757ab48b1 done   | 
-[7A[JCopying blob c9ec797c69ed done   | 
-Copying blob ecc510c1e359 done   | 
-Copying blob b19352c60515 done   | 
-Copying blob 113d9139ada2 [==============================>-------] 26.1MiB / 32.5MiB | 44.3 MiB/s
-Copying blob 188e9077f350 done   | 
-Copying blob 792a76c59dbd done   | 
-Copying blob 6a6757ab48b1 done   | 
-[7A[JCopying blob c9ec797c69ed done   | 
-Copying blob ecc510c1e359 done   | 
-Copying blob b19352c60515 done   | 
-Copying blob 113d9139ada2 [=====================================>] 32.5MiB / 32.5MiB | 61.6 MiB/s
-Copying blob 188e9077f350 done   | 
-Copying blob 792a76c59dbd done   | 
-Copying blob 6a6757ab48b1 done   | 
-[7A[JCopying blob c9ec797c69ed done   | 
-Copying blob ecc510c1e359 done   | 
-Copying blob b19352c60515 done   | 
-Copying blob 113d9139ada2 done   | 
-Copying blob 188e9077f350 done   | 
-Copying blob 792a76c59dbd done   | 
-Copying blob 6a6757ab48b1 done   | 
-[7A[JCopying blob c9ec797c69ed done   | 
-Copying blob ecc510c1e359 done   | 
-Copying blob b19352c60515 done   | 
-Copying blob 113d9139ada2 done   | 
-Copying blob 188e9077f350 done   | 
-Copying blob 792a76c59dbd done   | 
-Copying blob 6a6757ab48b1 done   | 
-[7A[JCopying blob c9ec797c69ed done   | 
-Copying blob ecc510c1e359 done   | 
-Copying blob b19352c60515 done   | 
-Copying blob 113d9139ada2 done   | 
-Copying blob 188e9077f350 done   | 
-Copying blob 792a76c59dbd done   | 
-Copying blob 6a6757ab48b1 done   | 
-[7A[JCopying blob c9ec797c69ed done   | 
-Copying blob ecc510c1e359 done   | 
-Copying blob b19352c60515 done   | 
-Copying blob 113d9139ada2 done   | 
-Copying blob 188e9077f350 done   | 
-Copying blob 792a76c59dbd done   | 
-Copying blob 6a6757ab48b1 done   | 
-[7A[JCopying blob c9ec797c69ed done   | 
-Copying blob ecc510c1e359 done   | 
-Copying blob b19352c60515 done   | 
-Copying blob 113d9139ada2 done   | 
-Copying blob 188e9077f350 done   | 
-Copying blob 792a76c59dbd done   | 
-Copying blob 6a6757ab48b1 done   | 
-[7A[JCopying blob c9ec797c69ed done   | 
-Copying blob ecc510c1e359 done   | 
-Copying blob b19352c60515 done   | 
-Copying blob 113d9139ada2 done   | 
-Copying blob 188e9077f350 done   | 
-Copying blob 792a76c59dbd done   | 
-Copying blob 6a6757ab48b1 done   | 
-Copying config ca5e66f340 done   | 
-[1A[JCopying config ca5e66f340 done   | 
-[1A[JCopying config ca5e66f340 done   | 
-[1A[JCopying config ca5e66f340 done   | 
-Writing manifest to image destination
-cc6bb24eb7df7cc174b6b56c0d0fdb4d8abb003cb5e48c140c74d27a48c66645
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004hp[1m[31mp[0m[39m[1m[31mp[0m[39m[90modman run --detach \[39m
-[90m         --name web nginx:latest[39m[K
-[KMM[4C[1m[31mp[1m[31mo[0m[39m[2B[KMM[5C[1m[31mp[1m[31mo[1m[31md[0m[39m[1m[31md[1m[31mm[0m[39m[1m[31mm[1m[31ma[0m[39m[1m[31ma[1m[31mn[0m[39m[0m[32mp[0m[32mo[0m[32md[0m[32mm[0m[32ma[0m[32mn[39m[32mn[32m [39m[32mn[39m[39m [39mc[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [1B[K[1B[KMM[11C[4mc[24m[90montainer stop 7ecb6609bdd0[39m[26D[4mc[39m[4mo[24m[4mo[39m[4mn[24m[4mn[39m[4mt[24m[24mc[24mo[24mn[24mt[39ma[39mi[39mn[39me[39mr[39m [39ml[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [16D[90ms -a  | grep agent[39m[18D[39ms[39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [39m [17D[?1l>[?2004l[1B]2;podman container ls\kpodman\CONTAINER ID  IMAGE                           COMMAND               CREATED        STATUS        PORTS       NAMES
-cc6bb24eb7df  docker.io/library/nginx:latest  nginx -g daemon o...  6 seconds ago  Up 7 seconds  80/tcp      web
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004h  docker run -d \
-         -[K-name mailer \
-         d[Kockerinaction/ch2_mailerMM[31D[7m [7m [7md[7mo[7mc[7mk[7me[7mr[7m [7mr[7mu[7mn[7m [7m-[7md[7m [7m\[1B[27m[7m [7m [7m [7m [7m [7m [7m [7m [7m [7m-[7m-[7mn[7ma[7mm[7me[7m [7mm[7ma[7mi[7ml[7me[7mr[7m [7m\[1B[27m[7m [7m [7m [7m [7m [7m [7m [7m [7m [7md[7mo[7mc[7mk[7me[7mr[7mi[7mn[7ma[7mc[7mt[7mi[7mo[7mn[7m/[7mc[7mh[7m2[7m_[7mm[7ma[7mi[7ml[7me[7mr[27m
-[KMMM[3C[27m [27m [27md[27mo[27mc[27mk[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27md[27m [27m\[1B[27m [27m [27m [27m [27m [27m [27m [27m [27m [27m-[27m-[27mn[27ma[27mm[27me[27m [27mm[27ma[27mi[27ml[27me[27mr[27m [27m\[1B[27m [27m [27m [27m [27m [27m [27m [27m [27m [27md[27mo[27mc[27mk[27me[27mr[27mi[27mn[27ma[27mc[27mt[27mi[27mo[27mn[27m/[27mc[27mh[27m2[27m_[27mm[27ma[27mi[27ml[27me[27mr[1B[KMMM[5C[1m[31md[1m[31mo[1m[31mc[1m[31mk[1m[31me[1m[31mr[0m[39m[3BM[34C[15DM[7CM[6C[P[16C [17D[P[15C [16D[P[14C [15D[P[13C [14D[P[12C [13D[P[11C [12D[P[10C [11D[0m[32mr[39m[P[9C [10D [1m[31mr[1m[31mu[1m[31mn[0m[39mp[0m[39m [1m[31mr[1m[31mu[1m[31mn[0m[39m -d \[9D[1m[31mp[0m[39m [0m[39mr[0m[39mu[0m[39mn[1m[31mp[1m[31mo[0m[39m run -d \[9D[1m[31mp[1m[31mo[1m[31md[0m[39m run -d \[9D[1m[31md[1m[31mm[0m[39m run -d \[9D[1m[31mm[1m[31ma[0m[39m run -d \[9D[1m[31ma[1m[31mn[0m[39m run -d \[9D[0m[32mp[0m[32mo[0m[32md[0m[32mm[0m[32ma[0m[32mn[39m[?1l>[?2004l[3B
-]2;podman run -d --name mailer dockerinaction/ch2_mailer\kpodman\[?25l[2K[34m?[0m Please select an image: 
-[2K  [1m▸[0m [4mregistry.access.redhat.com/dockerinaction/ch2_mailer:latest[0m
-[2K    registry.redhat.io/dockerinaction/ch2_mailer:latest
-[2K    docker.io/dockerinaction/ch2_mailer:latest
-[J[2K [J[2K[1A[1A[1A[1A[2K[34m?[0m Please select an image: [1B[2K    registry.access.redhat.com/dockerinaction/ch2_mailer:latest[1B[2K  [1m▸[0m [4mregistry.redhat.io/dockerinaction/ch2_mailer:latest[0m[1B[2K    docker.io/dockerinaction/ch2_mailer:latest[1B [J[2K [J[2K[1A[1A[1A[1A[2K[34m?[0m Please select an image: [1B[2K    registry.access.redhat.com/dockerinaction/ch2_mailer:latest[1B[2K    registry.redhat.io/dockerinaction/ch2_mailer:latest[1B[2K  [1m▸[0m [4mdocker.io/dockerinaction/ch2_mailer:latest[0m[1B [J[2K [J[2K [J[2K [1A[2K[1A[2K[1A[2K[1A[2K[2K[32m[32m✔[0m [2mdocker.io/dockerinaction/ch2_mailer:latest[0m
-[?25h[J[2KTrying to pull docker.io/dockerinaction/ch2_mailer:latest...
-Getting image source signatures
-Copying blob b50bdc71da50 done  
-Copying blob b50bdc71da50 .                                        0.0 b/s
-Copying blob fd22002b688a done  
-Copying blob fd22002b688a .                                        0.0 b/s
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob 1db09adb5ddd skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob 290aad86b00b done  
-Copying blob 290aad86b00b .                                        0.0 b/s
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-[14A[JCopying blob b50bdc71da50 done  
-Copying blob b50bdc71da50 ..                                       0.0 b/s
-Copying blob fd22002b688a done  
-Copying blob fd22002b688a ..                                       0.0 b/s
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob 1db09adb5ddd skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob 290aad86b00b done  
-Copying blob 290aad86b00b ..                                       0.0 b/s
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-[14A[JCopying blob b50bdc71da50 ...                                      0.0 b/s
-Copying blob fd22002b688a ...                                      0.0 b/s
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob 1db09adb5ddd skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob 290aad86b00b ...                                      0.0 b/s
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-[11A[JCopying blob b50bdc71da50 ....                                     0.0 b/s
-Copying blob fd22002b688a ....                                     0.0 b/s
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob 1db09adb5ddd skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob 290aad86b00b ....                                     0.0 b/s
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-[11A[JCopying blob b50bdc71da50                                          0.0 b/s
-Copying blob fd22002b688a done  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob 1db09adb5ddd skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob 290aad86b00b done  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-[11A[JCopying blob b50bdc71da50 .                                        578.6 KiB/s
-Copying blob fd22002b688a done  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob 1db09adb5ddd skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob 290aad86b00b done  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-[11A[JCopying blob b50bdc71da50 done  
-Copying blob fd22002b688a done  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob 1db09adb5ddd skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob 290aad86b00b done  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-[11A[JCopying blob b50bdc71da50 done  
-Copying blob fd22002b688a done  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob 1db09adb5ddd skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob 290aad86b00b done  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-[11A[JCopying blob b50bdc71da50 done  
-Copying blob fd22002b688a done  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob 1db09adb5ddd skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob 290aad86b00b done  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Copying blob a3ed95caeb02 skipped: already exists  
-Writing manifest to image destination
-b6aa9f1865466f58639c497b72d51f1457805e360b5d9688656bb8604ac1abfd
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004h[H[J[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [Kp[1m[31mp[0m[39m[1m[31mp[0m[39m[90modman run -d \[39m
-[90m         --name mailer \[39m[K
-[90m         dockerinaction/ch2_mailer[39m[K
-[KMMM[4C[1m[31mp[1m[31mo[0m[39m[3B[KMMM[5C[1m[31mp[1m[31mo[1m[31md[0m[39m[1m[31md[1m[31mm[0m[39m[1m[31mm[1m[31ma[0m[39m[1m[31ma[1m[31mn[0m[39m[0m[32mp[0m[32mo[0m[32md[0m[32mm[0m[32ma[0m[32mn[39m[32mn[32m [39m[32mn[39m[39m [39mp[39m [39m [39m [39m [39m [39m [39m [1B[K[1B[K[1B[KMMM[11C[90ms[39m[39ms[?1l>[?2004l[1B]2;podman ps\kpodman\CONTAINER ID  IMAGE                                       COMMAND               CREATED         STATUS         PORTS       NAMES
-cc6bb24eb7df  docker.io/library/nginx:latest              nginx -g daemon o...  17 minutes ago  Up 17 minutes  80/tcp      web
-b6aa9f186546  docker.io/dockerinaction/ch2_mailer:latest  /mailer/mailer.sh     4 seconds ago   Up 4 seconds   33333/tcp   mailer
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;167;192;128m➜[0m  [K[?1h=[?2004h  docker run --interactive --tty \
-         -[K-link web:web \
-         -[K-name web_test \
-         b[Kusybox:1.29 /bin/shMMM[26D[7m [7m [7md[7mo[7mc[7mk[7me[7mr[7m [7mr[7mu[7mn[7m [7m-[7m-[7mi[7mn[7mt[7me[7mr[7ma[7mc[7mt[7mi[7mv[7me[7m [7m-[7m-[7mt[7mt[7my[7m [7m\[1B[27m[7m [7m [7m [7m [7m [7m [7m [7m [7m [7m-[7m-[7ml[7mi[7mn[7mk[7m [7mw[7me[7mb[7m:[7mw[7me[7mb[7m [7m\[1B[27m[7m [7m [7m [7m [7m [7m [7m [7m [7m [7m-[7m-[7mn[7ma[7mm[7me[7m [7mw[7me[7mb[7m_[7mt[7me[7ms[7mt[7m [7m\[1B[27m[7m [7m [7m [7m [7m [7m [7m [7m [7m [7mb[7mu[7ms[7my[7mb[7mo[7mx[7m:[7m1[7m.[7m2[7m9[7m [7m/[7mb[7mi[7mn[7m/[7ms[7mh[27m
-[K[4A[3C[27m [27m [27md[27mo[27mc[27mk[27me[27mr[27m [27mr[27mu[27mn[27m [27m-[27m-[27mi[27mn[27mt[27me[27mr[27ma[27mc[27mt[27mi[27mv[27me[27m [27m-[27m-[27mt[27mt[27my[27m [27m\[1B[27m [27m [27m [27m [27m [27m [27m [27m [27m [27m-[27m-[27ml[27mi[27mn[27mk[27m [27mw[27me[27mb[27m:[27mw[27me[27mb[27m [27m\[1B[27m [27m [27m [27m [27m [27m [27m [27m [27m [27m-[27m-[27mn[27ma[27mm[27me[27m [27mw[27me[27mb[27m_[27mt[27me[27ms[27mt[27m [27m\[1B[27m [27m [27m [27m [27m [27m [27m [27m [27m [27mb[27mu[27ms[27my[27mb[27mo[27mx[27m:[27m1[27m.[27m2[27m9[27m [27m/[27mb[27mi[27mn[27m/[27ms[27mh[1B[K[4A[5C[1m[31md[1m[31mo[1m[31mc[1m[31mk[1m[31me[1m[31mr[0m[39m[3B[11C[4m/[4mb[4mi[4mn[4m/[4ms[4mh[24m[1B[?1l>[?2004l
-]2;docker run --interactive --tty --link web:web --name web_test busybox:1.29 \kdocker\zsh: docker: command not found...
-^C
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;230;126;128m➜ [0m  [K[?1h=[?2004h  docker run --interactive --tty \
-         --link web:web \[K
-         --name web_test \[K
-         busybox:1.29 /bin/sh[K
-[K[4A[38C[32D[1m[31md[1m[31mo[1m[31mc[1m[31mk[1m[31me[1m[31mr[0m[39m[3B[10C[4m/[4mb[4mi[4mn[4m/[4ms[4mh[24m[1B[K[4A[38C[14D[P[33C [34D[P[32C [33D[P[31C [32D[P[30C [31D[P[29C [30D[P[28C [29D[P[27C [28D[0m[32mr[39m[P[26C [27D [1m[31mr[1m[31mu[1m[31mn[0m[39mp[0m[39m [1m[31mr[1m[31mu[1m[31mn[0m[39m --interactive --tty \[26D[1m[31mp[0m[39m [0m[39mr[0m[39mu[0m[39mn[1m[31mp[1m[31mo[0m[39m run --interactive --tty \[26D[1m[31mp[1m[31mo[1m[31md[0m[39m run --interactive --tty \[26D[1m[31md[1m[31mm[0m[39m run --interactive --tty \[26D[1m[31mm[1m[31ma[0m[39m run --interactive --tty \[26D[1m[31ma[1m[31mn[0m[39m run --interactive --tty \[26D[0m[32mp[0m[32mo[0m[32md[0m[32mm[0m[32ma[0m[32mn[39m[?1l>[?2004l[4B
-]2;podman run --interactive --tty --link web:web --name web_test busybox:1.29 \kpodman\Error: unknown flag: --link
-See 'podman run --help'
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;230;126;128m➜ [0m  [K[?1h=[?2004hpodman run --interactive --tty \
-         --link web:web \[K
-         --name web_test \[K
-         busybox:1.29 /bin/sh[K
-[K[4A[36C[32D[32mp[32mo[32md[32mm[32ma[32mn[39m[3B[12C[4m/[4mb[4mi[4mn[4m/[4ms[4mh[24m[1B[K[4A[36C[1B[1C[1C[1C[1C[1C[1C[1C[1C[1C|--link web:web \[16D[1m[31m-[1m[31m-[1m[31ml[1m[31mi[1m[31mn[1m[31mk[0m[39m[1m[31m-[0m[39m[P[15C [17D[0m[39m-[0m[39m-[0m[39ml[0m[39mi[0m[39mn[0m[39mk#--link web:web \[16D[1m[30m#[1m[30m-[1m[30m-[1m[30ml[1m[30mi[1m[30mn[1m[30mk[1m[30m [1m[30mw[1m[30me[1m[30mb[1m[30m:[1m[30mw[1m[30me[1m[30mb[1m[30m [1m[30m\[0m[39m[1B[17D[1m[31m-[1m[31m-[1m[31mn[1m[31ma[1m[31mm[1m[31me[0m[39mM[?1l>[?2004l[3B
-]2;podman run --interactive --tty; --name web_test busybox:1.29 /bin/sh\kpodman\Error: requires at least 1 arg(s), only received 0
-zsh: --name: command not found...
-[1m[7m%[27m[1m[0m                                                                                                                                                                                                               ]2;familia@familia:~/Documents/Projects/heroana-os\k..ts/heroana-os\]7;file://familia/home/familia/Documents/Projects/heroana-os\[0m[27m[24m[J
-[38;2;127;187;179mk8s:([1;38;2;214;153;182mk3d-volt-local[0m[38;2;127;187;179m)[0m [1;38;2;131;192;146mheroana-os[0m [38;2;127;187;179mgit:([1;38;2;219;188;127mmaster[0m[38;2;127;187;179m)[0m [1;38;2;230;126;128m?[0m 
-[1;38;2;230;126;128m➜ [0m  [K[?1h=[?2004hpodman run --interactive --tty \
-         #--link web:web \[K
-         --name web_test \[K
-         busybox:1.29 /bin/sh[K
-[K[4A[36C[32D[32mp[32mo[32md[32mm[32ma[32mn[39m[1B[1m[30m#[1m[30m-[1m[30m-[1m[30ml[1m[30mi[1m[30mn[1m[30mk[1m[30m [1m[30mw[1m[30me[1m[30mb[1m[30m:[1m[30mw[1m[30me[1m[30mb[1m[30m [1m[30m\[0m[39m[1B[17D[1m[31m-[1m[31m-[1m[31mn[1m[31ma[1m[31mm[1m[31me[0m[39m[1B[7C[4m/[4mb[4mi[4mn[4m/[4ms[4mh[24m[1B[K[4A[36C[32D[39m [39m [39m [39m [39m [39m                           [1B[K[1B[K[1B[K[1B[K[4A[4Cpodman run --interactive --tty \[1B         #--link web:web \[K[1B         --name web_test \[K[1B         busybox:1.29 /bin/sh[K[1B[K[4A[36C[32D[32mp[32mo[32md[32mm[32ma[32mn[39m[1B[1m[30m#[1m[30m-[1m[30m-[1m[30ml[1m[30mi[1m[30mn[1m[30mk[1m[30m [1m[30mw[1m[30me[1m[30mb[1m[30m:[1m[30mw[1m[30me[1m[30mb[1m[30m [1m[30m\[0m[39m[1B[17D[1m[31m-[1m[31m-[1m[31mn[1m[31ma[1m[31mm[1m[31me[0m[39m[1B[7C[4m/[4mb[4mi[4mn[4m/[4ms[4mh[24m[1B[K[4A[36C[1B[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1BM[26C[1BM[1m[30m [0m[39m[0m[39m [1m[30mb[0m[39m[0m[39m [1m[30me[0m[39m[0m[39m [1m[30mw[0m[39m[0m[39m [1m[30m:[0m[39m[0m[39m [1m[30mb[0m[39m[0m[39m [1m[30me[0m[39m[0m[39m [1m[30mw[0m[39m[0m[39m [1m[30m [0m[39m[0m[39m [1m[30mk[0m[39m[0m[39m [1m[30mn[0m[39m[0m[39m [1m[30mi[0m[39m[0m[39m [1m[30ml[0m[39m[0m[39m [1m[30m-[0m[39m[0m[39m [1m[30m-[0m[39m[0m[39m [1m[30m#[0m[39m[0m[39m [0m[39m [K[MM[36C[1B[27D[0m[39m-[0m[39m-[0m[39mn[0m[39ma[0m[39mm[0m[39meM[21C[1B[?1l>[?2004l[3B]2;podman run --interactive --tty --name web_test busybox:1.29 /bin/sh\kpodman\Resolved "busybox" as an alias (/etc/containers/registries.conf.d/000-shortnames.conf)
-Trying to pull docker.io/library/busybox:1.29...
-Getting image source signatures
-Copying blob b4a6e23922dd [--------------------------------------] 0.0b / 710.9KiB
-Copying blob b4a6e23922dd [--------------------------------------] 0.0b / 710.9KiB | 0.0 b/s
-[2A[JCopying blob b4a6e23922dd [--------------------------------------] 0.0b / 710.9KiB
-Copying blob b4a6e23922dd [--------------------------------------] 0.0b / 710.9KiB | 0.0 b/s
-[2A[JCopying blob b4a6e23922dd [>-------------------------------------] 16.5KiB / 710.9KiB | 1.1 MiB/s
-[1A[JCopying blob b4a6e23922dd [========>-----------------------------] 168.5KiB / 710.9KiB | 1.6 MiB/s
-[1A[JCopying blob b4a6e23922dd [=====================================>] 704.0KiB / 710.9KiB | 2.3 MiB/s
-[1A[

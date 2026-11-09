@@ -80,6 +80,6 @@ function get_commands(deps, commands, cmd_str) {
 function get_brew_commands(deps, commands) {
     if (!deps) return ""
     gsub(field_separator, " ", deps)
-    return "brew install " deps
+    return "/opt/linuxbrew/bin/brew install -y " deps
 }
 
