@@ -12,6 +12,9 @@ USER_TEAM=${8-"DevOps Team"}
 USER_EMAIL=${9-"edmilson.rodriguesn38@gmail.com"}
 USER_PASSWORD="${10-123456}"
 USER_HOST="${11-heroana}"
+USER_LOCALE="${12-en_US.UTF-8}"
+USER_KB_LAYOUT="${13-en_US}"
+USER_TIMEZONE="${14-UTC}"
 USER_GROUPS="docker incus-admin lxd microk8s libvirt kvm wireshark sudo"
 USER_HOME="/home/${USER}"
 
@@ -76,8 +79,9 @@ configure_skel() {
 create_main_user() {
     chroot "${OS_DIR}/" apt update
     chroot "${OS_DIR}/" apt install -y locales
-    chroot "${OS_DIR}/" sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen
+    chroot "${OS_DIR}/" sed -i "/${USER_LOCALE}/s/^# //g" /etc/locale.gen
     chroot "${OS_DIR}/" locale-gen
+    chroot "${OS_DIR}/" update-locale LANG="${USER_LOCALE}"
 
     for group in $USER_GROUPS
     do
@@ -107,14 +111,16 @@ configure_root() {
 ff02::1     ip6-allnodes
 ff02::2     ip6-allrouters
 EOF
+
+    chroot "${OS_DIR}" ln -sf "/usr/share/zoneinfo/${USER_TIMEZONE}" /etc/localtime
 }
 
 install_deps() {
     apt install -y gawk unzip
 
     chroot "${OS_DIR}/" bash -c "
-  echo 'keyboard-configuration keyboard-configuration/layout select English (US)' | debconf-set-selections
-  echo 'keyboard-configuration keyboard-configuration/variant select English (US)' | debconf-set-selections
+  echo 'keyboard-configuration keyboard-configuration/layout select ${USER_KB_LAYOUT}' | debconf-set-selections
+  echo 'keyboard-configuration keyboard-configuration/variant select ${USER_KB_LAYOUT}' | debconf-set-selections
 "
 
     mkdir "${OS_DIR}/opt/linuxbrew"
