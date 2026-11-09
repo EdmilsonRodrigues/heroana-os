@@ -82,4 +82,3 @@ function get_brew_commands(deps, commands) {
     gsub(field_separator, " ", deps)
     return "/opt/linuxbrew/bin/brew install -y " deps
 }
-

@@ -36,7 +36,7 @@ get_fs_info() {
     local disk_gb=$(( disk_bytes / 1024 / 1024 / 1024 ))
 
     SIZE_BOOT="512M"
-    
+
     if [ "$disk_gb" -le 32 ]; then
         HAS_SWAP="yes"
         SIZE_SWAP="2G"
@@ -92,7 +92,7 @@ get_user_info() {
 
     local default_user
     default_user=$(echo "$USER_FULL_NAME" | tr '[:upper:]' '[:lower:]' | tr -d '[:space:]')
-    
+
     USER=$(whiptail --title "${MAIN_TITLE} - Username" --inputbox "Username" 0 0 "$default_user" 3>&1 1>&2 2>&3)
     [ $? -ne 0 ] && quit
 
@@ -108,7 +108,7 @@ get_user_info() {
     while true; do
         USER_PASSWORD=$(whiptail --title "${MAIN_TITLE} - Password" --passwordbox "Password" 0 60 3>&1 1>&2 2>&3)
         [ $? -ne 0 ] && quit
-        
+
         local confirm_password
         confirm_password=$(whiptail --title "${MAIN_TITLE} - Confirm Password" --passwordbox "Confirm Password" 0 60 3>&1 1>&2 2>&3)
         [ $? -ne 0 ] && quit
@@ -124,7 +124,7 @@ get_user_info() {
     while read -r tz; do
         tz_choices+=("$tz" "$tz")
     done < <(find /usr/share/zoneinfo -type f | sed 's|/usr/share/zoneinfo/||' | grep -v '^posix/' | grep -v '^right/' | sort)
-    
+
     USER_TIMEZONE=$(whiptail --title "${MAIN_TITLE} - Timezone" --menu "Choose Timezone" 0 0 0 "${tz_choices[@]}" 3>&1 1>&2 2>&3)
     [ -z "$USER_TIMEZONE" ] && USER_TIMEZONE="UTC"
 
@@ -132,7 +132,7 @@ get_user_info() {
     while read -r loc; do
         loc_choices+=("$loc" "$loc")
     done < <(locale -a 2>/dev/null || echo "en_US.UTF-8")
-    
+
     USER_LOCALE=$(whiptail --title "${MAIN_TITLE} - Locale" --menu "Choose Locale" 0 0 0 "${loc_choices[@]}" 3>&1 1>&2 2>&3)
     [ -z "$USER_LOCALE" ] && USER_LOCALE="en_US.UTF-8"
 
