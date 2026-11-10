@@ -1,4 +1,5 @@
 #!/usr/bin/sh
+set -e
 
 OS_DIR=${1-"/mnt/heroana-os"}
 SCRIPTS_DIR=${2-"scripts"}
@@ -18,6 +19,15 @@ USER_TIMEZONE="${14-UTC}"
 USER_GROUPS="docker incus-admin lxd microk8s libvirt kvm wireshark sudo"
 USER_HOME="/home/${USER}"
 
+EFI_DEV="${15}"
+BOOT_DEV="${16}"
+SWAP_DEV="${17}"
+HOME_DEV="${18}"
+ROOT_DEV="${19}"
+FS_ROOT="${20:-ext4}"
+FS_HOME="${21:-ext4}"
+DISK_TO_INSTALL="${22}"
+
 export ISO_USER="$USER"
 
 INSTALLATION_CMD_AWK="${SCRIPTS_DIR}/installation-commands.awk"
@@ -29,14 +39,14 @@ prepare_fs() {
 
     debootstrap --arch=amd64 stable "${OS_DIR}/" http://deb.debian.org/debian/
 
-    mount --bind /dev         "${OS_DIR}/dev"
-    mount --bind /dev/null    "${OS_DIR}/dev/null"
-    mount --bind /dev/urandom "${OS_DIR}/dev/urandom"
-    mount --bind /dev/random  "${OS_DIR}/dev/random"
-    mount --bind /proc        "${OS_DIR}/proc"
-    mount --bind /sys         "${OS_DIR}/sys"
-    mount -t devpts devpts    "${OS_DIR}/dev/pts"
-    mount --bind /run         "${OS_DIR}/run"
+    mount --bind /dev           "${OS_DIR}/dev"
+    mount --bind /dev/null      "${OS_DIR}/dev/null"
+    mount --bind /dev/urandom   "${OS_DIR}/dev/urandom"
+    mount --bind /dev/random    "${OS_DIR}/dev/random"
+    mount --bind /proc          "${OS_DIR}/proc"
+    mount --bind /sys           "${OS_DIR}/sys"
+    mount -t devpts devpts      "${OS_DIR}/dev/pts"
+    mount --bind /run           "${OS_DIR}/run"
 }
 
 configure_skel() {
@@ -45,8 +55,8 @@ configure_skel() {
     install -Dm644 "${DOTFILES_DIR}/kitty/kitty.conf" "${OS_DIR}/etc/skel/.config/kitty/kitty.conf"
     install -Dm644 "${DOTFILES_DIR}/kitty/theme.conf" "${OS_DIR}/etc/skel/.config/kitty/theme.conf"
 
-    install -Dm644 "${DOTFILES_DIR}/sway/config"                       "${OS_DIR}/etc/skel/.config/sway/config"
-    install -Dm644 "${DOTFILES_DIR}/sway/config.d/00-theme.conf"       "${OS_DIR}/etc/skel/.config/sway/config.d/00-theme.conf"
+    install -Dm644 "${DOTFILES_DIR}/sway/config"                         "${OS_DIR}/etc/skel/.config/sway/config"
+    install -Dm644 "${DOTFILES_DIR}/sway/config.d/00-theme.conf"        "${OS_DIR}/etc/skel/.config/sway/config.d/00-theme.conf"
     install -Dm644 "${DOTFILES_DIR}/sway/config.d/00-keybindings.conf" "${OS_DIR}/etc/skel/.config/sway/config.d/00-keybindings.conf"
 
     install -Dm644 "${DOTFILES_DIR}/wofi/config"     "${OS_DIR}/etc/skel/.config/wofi/config"
@@ -55,13 +65,13 @@ configure_skel() {
     install -Dm644 "${DOTFILES_DIR}/waybar/config"    "${OS_DIR}/etc/skel/.config/waybar/config"
     install -Dm644 "${DOTFILES_DIR}/waybar/style.css" "${OS_DIR}/etc/skel/.config/waybar/style.css"
 
-    install -Dm644 "${DOTFILES_DIR}/eww/eww.scss"                "${OS_DIR}/etc/skel/.config/eww/eww.scss"
-    install -Dm644 "${DOTFILES_DIR}/eww/eww.yuck"                "${OS_DIR}/etc/skel/.config/eww/eww.yuck"
-    install -Dm644 "${DOTFILES_DIR}/eww/eww_vars.yuck"           "${OS_DIR}/etc/skel/.config/eww/eww_vars.yuck"
+    install -Dm644 "${DOTFILES_DIR}/eww/eww.scss"                 "${OS_DIR}/etc/skel/.config/eww/eww.scss"
+    install -Dm644 "${DOTFILES_DIR}/eww/eww.yuck"                 "${OS_DIR}/etc/skel/.config/eww/eww.yuck"
+    install -Dm644 "${DOTFILES_DIR}/eww/eww_vars.yuck"            "${OS_DIR}/etc/skel/.config/eww/eww_vars.yuck"
     install -Dm644 "${DOTFILES_DIR}/eww/eww_widgets.yuck"        "${OS_DIR}/etc/skel/.config/eww/eww_widgets.yuck"
     install -Dm644 "${DOTFILES_DIR}/eww/scripts/start.sh"        "${OS_DIR}/etc/skel/.config/eww/scripts/start.sh"
-    install -Dm644 "${DOTFILES_DIR}/eww/scripts/uptime.sh"       "${OS_DIR}/etc/skel/.config/eww/scripts/uptime.sh"
-    install -Dm644 "${DOTFILES_DIR}/eww/scripts/day_format.sh"   "${OS_DIR}/etc/skel/.config/eww/scripts/day_format.sh"
+    install -Dm644 "${DOTFILES_DIR}/eww/scripts/uptime.sh"        "${OS_DIR}/etc/skel/.config/eww/scripts/uptime.sh"
+    install -Dm644 "${DOTFILES_DIR}/eww/scripts/day_format.sh"    "${OS_DIR}/etc/skel/.config/eww/scripts/day_format.sh"
     install -Dm644 "${DOTFILES_DIR}/eww/scripts/month_format.sh" "${OS_DIR}/etc/skel/.config/eww/scripts/month_format.sh"
     install -Dm644 "${DOTFILES_DIR}/eww/scripts/year_format.sh"  "${OS_DIR}/etc/skel/.config/eww/scripts/year_format.sh"
 
@@ -125,7 +135,7 @@ install_deps() {
 
     mkdir "${OS_DIR}/opt/linuxbrew"
     chroot "${OS_DIR}" chown -R "$ISO_USER:$ISO_USER" /opt/linuxbrew
-    chroot "${OS_DIR}" apt install -y git curl unzip
+    chroot "${OS_DIR}" apt install -y git curl unzip linux-image-amd64 grub-efi-amd64
     chroot "${OS_DIR}" git config --global --add safe.directory /opt/linuxbrew/Homebrew
 
     mkdir -p "${OS_DIR}/usr/local/share/fonts/maple-mono"
@@ -137,9 +147,7 @@ install_deps() {
     chroot "${OS_DIR}" fc-cache -fv
 
     curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh -o "${OS_DIR}/tmp/brew_install.sh"
-
     chroot --userspec="$ISO_USER:$ISO_USER" "${OS_DIR}" /bin/bash -c "export HOME=${USER_HOME} && NONINTERACTIVE=1 /bin/bash /tmp/brew_install.sh --path /opt/linuxbrew"
-
     rm -f "${OS_DIR}/tmp/brew_install.sh"
 
     gawk -f "$INSTALLATION_CMD_AWK" "$DEPS_FILE" | while IFS= read -r line; do
@@ -170,21 +178,52 @@ command = "cage -s -- gtkgreet"
 user = "_greetd"
 EOF
 
-    # Specify the sessions available to launch from gtkgreet
     echo "sway" > "${OS_DIR}/etc/greetd/environments"
+    chroot "${OS_DIR}" usermod -aG video,render _greetd
+    chroot "${OS_DIR}" systemctl enable greetd
 
-    systemctl enable greetd
+    if [ -n "$DISK_TO_INSTALL" ]; then
+        chroot "${OS_DIR}" grub-install "/dev/$DISK_TO_INSTALL"
+        chroot "${OS_DIR}" update-grub
+    fi
+}
+
+generate_fstab() {
+    echo "Generating /etc/fstab..."
+    _fstab_path="${OS_DIR}/etc/fstab"
+    echo "" > "$_fstab_path"
+
+    _root_uuid=$(blkid -s UUID -o value "$ROOT_DEV")
+    _home_uuid=$(blkid -s UUID -o value "$HOME_DEV")
+    _boot_uuid=$(blkid -s UUID -o value "$BOOT_DEV")
+    _efi_uuid=$(blkid -s UUID -o value "$EFI_DEV")
+
+    {
+        echo "UUID=$_root_uuid / $FS_ROOT errors=remount-ro 0 1"
+        echo "UUID=$_boot_uuid /boot ext4 defaults 0 2"
+        echo "UUID=$_home_uuid /home $FS_HOME defaults 0 2"
+        echo "UUID=$_efi_uuid /boot/efi vfat umask=0077 0 1"
+    } >> "$_fstab_path"
+
+    if [ -n "$SWAP_DEV" ]; then
+        _swap_uuid=$(blkid -s UUID -o value "$SWAP_DEV")
+        echo "UUID=$_swap_uuid none swap sw 0 0" >> "$_fstab_path"
+    fi
 }
 
 umount_fs() {
-    umount "${OS_DIR}/dev/pts"
-    umount "${OS_DIR}/dev/null"
-    umount "${OS_DIR}/dev/urandom"
-    umount "${OS_DIR}/dev/random"
-    umount "${OS_DIR}/dev"
-    umount "${OS_DIR}/proc"
-    umount "${OS_DIR}/sys"
-    umount "${OS_DIR}/run"
+    umount "${OS_DIR}/boot/efi" || true
+    umount "${OS_DIR}/boot" || true
+    umount "${OS_DIR}/home" || true
+    umount "${OS_DIR}/dev/pts" || true
+    umount "${OS_DIR}/dev/null" || true
+    umount "${OS_DIR}/dev/urandom" || true
+    umount "${OS_DIR}/dev/random" || true
+    umount "${OS_DIR}/dev" || true
+    umount "${OS_DIR}/proc" || true
+    umount "${OS_DIR}/sys" || true
+    umount "${OS_DIR}/run" || true
+    umount "${OS_DIR}" || true
 }
 
 main() {
@@ -193,8 +232,7 @@ main() {
     create_main_user
     install_deps
     configure_root
-    # configure_main_user
-    # configure_system
+    generate_fstab
     umount_fs
 }
 
