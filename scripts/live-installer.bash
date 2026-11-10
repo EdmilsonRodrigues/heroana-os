@@ -1,5 +1,4 @@
 #!/usr/bin/bash
-set -e
 
 MAIN_TITLE="Heroana OS Installer"
 
@@ -22,7 +21,7 @@ get_fs_info() {
     CHOICES=()
     while read -r name size; do
         CHOICES+=("$name" "Disk: $name Size: $size")
-    done < <(lsblk -bndo NAME,SIZE,TYPE | awk '$3 == "disk" {print $1, $2}')
+    done < <(lsblk -ndo NAME,SIZE,TYPE | awk '$3 == "disk" {print $1, $2}')
 
     local choice_selected
     choice_selected=$(whiptail --title "${MAIN_TITLE}" --menu "
@@ -174,10 +173,13 @@ Keyboard:    $USER_KB_LAYOUT
 
 Is this configuration correct? Do you want to proceed?"
 
-    whiptail --title "${MAIN_TITLE} - Summary" --yesno "$summary" 0 0 || quit
+    # Use explicit dimensions (20 rows, 70 columns) to prevent auto-size crashes
+    if ! whiptail --title "${MAIN_TITLE} - Summary" --yesno "$summary" 20 70; then
+        echo "Debug: whiptail exited with status $?"
+        quit
+    fi
 
     echo "Wiping and partitioning /dev/$disk_to_install..."
-
     sgdisk --zap-all "/dev/$disk_to_install"
 
     sgdisk -n "1:0:+${SIZE_EFI}" -t 1:ef00 -c 1:"EFI" "/dev/$disk_to_install"

@@ -38,10 +38,12 @@ chroot "$BUILD_DIR" apt install -y \
     systemd-sysv \
     whiptail \
     gdisk \
+    parted \
     util-linux \
     dosfstools \
     xfsprogs \
     btrfs-progs \
+    locales-all \
     sudo \
     zsh \
     git \
